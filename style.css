@@ -108,7 +108,7 @@ a {
 }
 
 .nicho {
-    height: 380px;
+    height: 60vh;
     width: 300px;
     background-color: #ffffff;
     border-radius: 10px;
@@ -190,3 +190,8 @@ div.redes{
     max-width: 50px;
     max-width: 50px;
 }
+
+.redes a:hover{
+    
+}
+
