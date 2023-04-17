@@ -191,7 +191,10 @@ div.redes{
     max-width: 50px;
 }
 
+/*
 .redes a:hover{
-    
+    border: 2.5px solid rgba(255, 255, 255, 0.555);
+    transform: translate(-3px, -3px);
+    transition: 0.5s, border 1s;
 }
-
+*/
