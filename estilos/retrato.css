@@ -4,71 +4,38 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
 
-section#container {
-    background-color: red;
-}
-
 
 .nicho {
-    height: 375px;
-    width: 300px;
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.200);
-    padding: 12px;
-    max-height: 465px;
-    max-width: 180px;
-    margin: 10px ;
-    display: inline-block;
+    height: 290px;
+    width: 150px;
 }
 
 .nome_produto {
-    font-weight: bold;
-    color: var(--cor0);
+    font-size: 12px;
 }
 
 .imagem_produto {
     margin: auto;
-    height: 200px;
-    width: 185px;
+    height: 150px;
+    width: 145px;
 }
 
 .descricao {
-    color: #667381;
-    font-size: 12px;
+    font-size: 8px;
 }
 
 .preco_anterior {
-    font-size: 13px;
-    font-weight: bold;
-    text-decoration: line-through;
-    color: #99A2AB;
-    margin-bottom: 10px;
-
+    font-size: 10px;
 }
 
 .preco_atual {
-    font-size: 25px;
-    font-weight: bolder;
-    color: var(--cor0);
-    margin-top: -10px;
+    font-size: 20px;
+     
 }
 
 .comprar {
-    background-color: var(--cor0);
-    font-size: 20px;
-    color: white;
-    text-align: center;
-    height: 50px;
+    font-size: 15px;
+    height: 40px;
     border-radius: 10px;
     padding-top: 25px;
-}
-
-.comprar:hover {
-    background-color: var(--cor1);
-}
-
-.comprar:active {
-    color: var(--cor1);
-    background-color: white;
 }
