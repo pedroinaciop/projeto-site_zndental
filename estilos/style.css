@@ -35,6 +35,7 @@ header > img {
     margin: auto;
     display: block;
     padding: 15px;
+    height: 50px;
 }
 
 header > hr {
@@ -49,7 +50,6 @@ nav {
 
 nav a {
     color: var(--cor0);
-    text-decoration: none;
     font-weight: bold;
     font-size: 14px;
     padding: 8px;
