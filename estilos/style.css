@@ -19,12 +19,11 @@
 
 body, html {
     height: 100vh;
-    width: 100vw;
 }
 
 main {
     display: block;
-    margin: 20px 0px 20px 50px;
+    margin: auto;
 }
 
 header {
@@ -90,18 +89,20 @@ div.redes{
 .redes img {
     max-width: 50px;
     max-width: 50px;
+    margin-bottom: 10px;
 }
 
 /*---------------- PRODUTO EM DESTAQUE -------------------------*/
 
-.meio {
+.container {
     margin: auto;
     display: block;
     max-width: 1135px;
+    padding-top: 15px;
 }
 
 .nicho {
-    height: 380px;
+    height: 400px;
     width: 300px;
     background-color: #ffffff;
     border-radius: 10px;
@@ -109,7 +110,7 @@ div.redes{
     padding: 12px;
     max-height: 465px;
     max-width: 180px;
-    margin: 10px ;
+    margin: 10px;
     display: inline-block;
 }
 
