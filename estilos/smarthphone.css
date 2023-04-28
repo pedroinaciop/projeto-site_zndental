@@ -1,20 +1,11 @@
 @charset "UTF-8";
 
-@media screen and (min-width: 374px) and (max-width: 812px) {
-    
-    header {
-        height: 105px;
-    }
-
-    nav {
-        padding: 0px;
-    }
-    
+@media screen and (min-width: 374px) and (max-width: 812px) { 
     hr {
-        border: none;
+       margin-bottom: -2px;
     }
 
-    nav a {
+    menu a {
         font-size: 11px;
         padding: 5px; 
     }
@@ -33,12 +24,11 @@
         display: block;
         max-width: 1135px;
         padding-top: 15px;
-        padding-right: 5px;
-        padding-left: 5px;
+        padding-left: 9px;
     }
 
     .nicho {
-        height: 310px;
+        height: 315px;
         width: 150px;
         padding: 8px;
         margin: 3px;

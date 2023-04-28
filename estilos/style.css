@@ -41,24 +41,38 @@ header > img {
 header > hr {
     color: var(--cor0);
     border-top: 2px solid var(--cor0);
+
+}
+
+i#burguer {
+    background-color: var(--cor0);
+    color: white; 
+    display: block;
+    text-align: center;
+    padding: 3px;
+}
+
+i#burguer:hover {
+    background-color: white;
+    color: var(--cor0); 
 }
    
-nav {
+menu {
+    display: none;
     text-align: center;
-    padding: 6px;
+    font-weight: bold; 
 }
 
-nav a {
+menu > ul > li > a {
+    display: block;
     color: var(--cor0);
     font-weight: bold;
-    font-size: 14px;
-    padding: 8px;
+    padding: 3px;
 }
 
-nav a:hover {
-    color: white;
+menu > ul > li > a:hover {
     background-color: var(--cor0);
-    transition-duration: 0.4s;
+    color: white;  
 }
 
 h1 {
@@ -97,7 +111,7 @@ div.redes{
 .container {
     margin: auto;
     display: block;
-    max-width: 1135px;
+    max-width: 910px;
     padding-top: 15px;
 }
 
