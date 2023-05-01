@@ -33,6 +33,22 @@ header > img {
     height: 50px;
 }
 
+div#botao_login span {
+    position: absolute;
+    display: inline-flex;
+    margin: 30px 10px 0px 10px;
+    color: #363863;
+}
+
+div#botao_login span:hover {
+    background-color: #363863;
+    color: white;
+    border-radius: 2px;
+
+    
+    transition: .5s;
+}
+
 i#burguer {
     background-color: var(--cor0);
     color: white; 
@@ -69,11 +85,14 @@ menu > ul > li > a:hover {
     display: block;
     max-width: 1135px;
     padding-top: 15px;
-    padding-left: 9px;
+    padding-left: 10.5px;
+
+    transition: width 1s, height 1s;
+    transition-timing-function: ease;
 }
 
 .nicho {
-    height: 325px;
+    height: 335px;
     width: 150px;
     background-color: #ffffff;
     border-radius: 10px;
@@ -125,8 +144,8 @@ menu > ul > li > a:hover {
     text-align: center;
     height: 30px;
     border-radius: 10px;
-    padding-bottom: 10px;
-    padding-top: 20px;
+    padding-bottom: 15px;
+    padding-top: 25px;
 }
 
 .comprar:hover {
@@ -140,8 +159,8 @@ menu > ul > li > a:hover {
 
 footer {
     background-color: #363863;
-    height: 25vh;
-     
+    height: 30vh;
+    margin-top: 20px;
 }
 
 /* ELEMENTOS */

@@ -1,66 +1,104 @@
 @charset "UTF-8";
 
-@media screen and (min-width: 374px) and (max-width: 812px) { 
-    hr {
-       margin-bottom: -2px;
-    }
-
-    menu a {
-        font-size: 11px;
-        padding: 5px; 
-    }
-    
-    h1#texto_inicial {
-        text-align: center;   
-        font-weight: bold;
-        color: var(--cor2);
-        font-size: 15px;
-        padding-bottom: 10px;
-    }
-    
+@media screen and (max-width: 320px) { /*celulares pequenos*/
 
     .container {
-        margin: auto;
-        display: block;
-        max-width: 1135px;
-        padding-top: 15px;
-        padding-left: 9px;
+        padding-left: 0px;
+        width: 300px;
     }
-
+    
     .nicho {
-        height: 315px;
-        width: 150px;
-        padding: 8px;
-        margin: 3px;
+        height: 285px;
+        width: 130px;
+        margin: 0px 0px 5px 2px;
     }
-
-    .nome_produto {
-        font-size: 14px;
-    }
-
+    
     .imagem_produto {
+        display: block;
         margin: auto;
-        height: 150px;
-        width: 150px;
+        height: 115px;
+        width: 120px;
+    }
+    
+    .preco_atual {
+        font-size: 1.2em;
     }
 
     .descricao {
-        font-size: 10px;
-    }
-
-    .preco_anterior {
-        font-size: 10px;
-    }
-
-    .preco_atual {
-        font-size: 22px;
+        font-size: 0.5em;
     }
 
     .comprar {
-        font-size: 18px;
-        height: 30px;
-        padding-top: 20px;
-        padding-bottom: 10px;
+        height: 40px; 
+        padding-bottom: 5px;
+    }
+    
+    footer {
+        height: 35vh;
+    }
+    
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {  /* TABLET */ 
+    div#botao_login span {   
+         margin: 30px 50px 0px 200px; 
+     }
+
+
+    h1#texto_inicial {
+         text-align: left;
     }
 
+    .container {
+        padding-left: 0px;
+        width: 700px;
+    }
+
+    footer {
+         height: 30vh;
+     }
+
+}
+
+@media screen and (min-width: 992px) { /* DESKTOP */  
+
+    div#botao_login span {   
+        margin: 30px 50px 0px 300px; 
+    }
+
+    h1#texto_inicial {
+        text-align: left;
+    }
+
+    .container {
+        padding-left: 0px;
+        width: 795px;
+    }
+    
+    .nicho {
+        height: 405px;
+        width: 170px;
+        margin: 5px;
+    }
+    
+    .imagem_produto {
+        display: block;
+        margin: auto;
+        height: 200px;
+        width: 180px;
+    }
+    
+    .preco_atual {
+        font-size: 2em;
+    }
+    
+    .comprar {
+        height: 50px; 
+        padding-bottom: 5px;
+    }
+
+    footer {
+        margin-top: 90px;
+        height: 30vh;
+    }
 }
