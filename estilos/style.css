@@ -43,10 +43,16 @@ div#botao_login span {
 div#botao_login span:hover {
     background-color: #363863;
     color: white;
-    border-radius: 2px;
+    border-radius: 10px;  
+}
 
-    
-    transition: .5s;
+
+div#botao_login span:active {
+    background-color: #363863;
+    color: white;
+    border-radius: 10px;
+
+    transition: .2s;
 }
 
 i#burguer {
@@ -60,6 +66,11 @@ i#burguer {
 i#burguer:hover {
     background-color: white;
     color: var(--cor0); 
+}
+
+i#burguer:active {
+    background-color: var(--cor0);
+    color: white; 
 }
    
 menu {
@@ -78,6 +89,11 @@ menu > ul > li > a {
 menu > ul > li > a:hover {
     background-color: var(--cor0);
     color: white;  
+}
+
+menu > ul > li > a:active {
+    background-color: white;
+    color: var(--cor0);   
 }
 
 .container {
