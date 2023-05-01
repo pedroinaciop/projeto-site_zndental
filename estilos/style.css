@@ -19,16 +19,11 @@
 
 body, html {
     height: 100vh;
-}
-
-main {
-    display: block;
-    margin: auto;
+    background-color: #F9F9F9;
 }
 
 header {
-    background-color: #F9F9F9;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.319);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.413);
 }
 
 header > img {
@@ -36,12 +31,6 @@ header > img {
     display: block;
     padding: 15px;
     height: 50px;
-}
-
-header > hr {
-    color: var(--cor0);
-    border-top: 2px solid var(--cor0);
-
 }
 
 i#burguer {
@@ -75,77 +64,46 @@ menu > ul > li > a:hover {
     color: white;  
 }
 
-h1 {
-    font-weight: 100;
-    text-align: center;
-}
-
-h1#texto_inicial {
-    text-align: left;   
-    font-weight: bold;
-    color: var(--cor2);
-    font-size: 18px;
-}
-
-h2 {
-    font-weight: 500;
-    text-align: center;
-}
-
-div.redes{
-    height: 55px;
-    width: 157px;
-    margin: auto;
-    margin-bottom: 20px;
-    display: block;
-}
-
-.redes img {
-    max-width: 50px;
-    max-width: 50px;
-    margin-bottom: 10px;
-}
-
-/*---------------- PRODUTO EM DESTAQUE -------------------------*/
-
 .container {
     margin: auto;
     display: block;
-    max-width: 910px;
+    max-width: 1135px;
     padding-top: 15px;
+    padding-left: 9px;
 }
 
 .nicho {
-    height: 400px;
-    width: 300px;
+    height: 325px;
+    width: 150px;
     background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.200);
-    padding: 12px;
+    padding: 8px;
     max-height: 465px;
     max-width: 180px;
-    margin: 10px;
+    margin: 3px;
     display: inline-block;
 }
 
 .nome_produto {
+    font-size: 1em;
     font-weight: bold;
     color: var(--cor0);
 }
 
 .imagem_produto {
     margin: auto;
-    height: 200px;
-    width: 185px;
+    height: 150px;
+    width: 150px;
 }
 
 .descricao {
     color: #667381;
-    font-size: 12px;
+    font-size: .7em;
 }
 
 .preco_anterior {
-    font-size: 13px;
+    font-size: .7em;
     font-weight: bold;
     text-decoration: line-through;
     color: #99A2AB;
@@ -154,7 +112,7 @@ div.redes{
 }
 
 .preco_atual {
-    font-size: 25px;
+    font-size: 1.5em;
     font-weight: bolder;
     color: var(--cor0);
     margin-top: -10px;
@@ -162,12 +120,13 @@ div.redes{
 
 .comprar {
     background-color: var(--cor0);
-    font-size: 20px;
+    font-size: 1.3em;
     color: white;
     text-align: center;
-    height: 50px;
+    height: 30px;
     border-radius: 10px;
-    padding-top: 25px;
+    padding-bottom: 10px;
+    padding-top: 20px;
 }
 
 .comprar:hover {
@@ -179,4 +138,41 @@ div.redes{
     background-color: white;
 }
 
-/*PRODUTO EM DESTAQUE*/
+footer {
+    background-color: #363863;
+    height: 25vh;
+     
+}
+
+/* ELEMENTOS */
+
+h1 {
+    font-weight: 100;
+    text-align: center;
+}
+
+h1#texto_inicial {
+    text-align: center;   
+    font-weight: bold;
+    color: var(--cor2);
+    font-size: 1.2em;
+    padding: 10px;
+}
+
+h2 {
+    text-align: center;
+}
+
+div.redes {
+    height: 55px;
+    width: 157px;
+    margin: auto;
+    margin-bottom: 20px;
+    display: block;
+}
+
+div.redes img {
+    max-width: 50px;
+    max-width: 50px;
+    margin-bottom: 10px;
+}
