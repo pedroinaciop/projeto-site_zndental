@@ -1,7 +1,6 @@
 @charset "UTF-8";
 
-@media screen and (max-width: 320px) { /*celulares pequenos*/
-
+@media screen and (max-width: 320px) { /*Celular*/
     .container {
         padding-left: 0px;
         width: 300px;
@@ -37,6 +36,12 @@
         height: 35vh;
     }
     
+}
+
+@media screen and (min-width: 410px) and (max-width: 415px) { /*Celular*/
+    .container {
+        width: 350px;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {  /* TABLET */ 
