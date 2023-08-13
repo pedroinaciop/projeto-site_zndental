@@ -1,6 +1,6 @@
-@import url(../estilos/_header.css);
-@import url(../estilos/_main.css);
-@import url(../estilos/_footer.css);
+@import url(../estilos/header.css);
+@import url(../estilos/main.css);
+@import url(../estilos/footer.css);
 @import url(../estilos/reset.css);
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Open+Sans:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
