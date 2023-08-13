@@ -1,0 +1,20 @@
+@import url(_header.css);
+@import url(_main.css);
+@import url(_footer.css);
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+:root {
+    --cor0: #363863;
+    --cor1: #363889;
+    --cor2: #1C5943;
+    --cor4: #ffffff;
+    --cor5: #000000;
+    --cor-fonte: #667381;
+}
+
+body, html {
+    height: 100vh;
+    background-color: #F9F9F9;
+}

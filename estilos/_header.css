@@ -1,0 +1,74 @@
+.cabecalho {
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+    padding: 15px;
+
+    background-color: var(--cor4);
+    box-shadow: 1px 1px 5px #0000001a;
+}
+
+.cabecalho__logo {
+    height: 55px;
+}
+
+.cabecalho__pesquisa {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.input__pesquisa {
+    border-radius: 10px;
+    border: 2px solid #99a2ab;
+    padding: 10px;
+    height: 35px;
+    width: 300px;
+
+    background-image: url(../imagens/lupa.png);
+    background-position: 96%;
+    background-repeat: no-repeat;
+}
+
+.login {
+    display: flex;
+    align-items: center;
+}
+
+.login p {
+    color: var(--cor-fonte);
+    font-size: .8em;
+}
+
+.icon__login {
+    width: 23px;
+    padding: 10px;
+}
+
+/*    */
+
+.navegacao {
+    background-color: var(--cor4);
+    border: 1px solid #66738150;
+}
+
+.navegacao__lista {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 10px;
+    list-style-type: none;
+}
+
+.lista__tipo {
+    font-size: .9em;
+}
+
+.lista__tipo__link {
+    color: var(--cor-fonte);
+}
+
+.lista__tipo__link:hover {
+    color: var(--cor1);
+    border-bottom: 1px solid var(--cor1);
+}

@@ -1,0 +1,50 @@
+.rodape {
+    height: 100vh;
+    color: var(--cor-fonte);
+}
+
+.rodape__informacoes {
+    display: grid;
+    grid-template-columns: .10fr .15fr .15fr .15fr .15fr;
+    gap: 2rem;
+    justify-content: center;
+    padding: 80px 0;
+}
+
+.rodape__container {
+    list-style-type: none;
+}
+
+.rodape__container_item {
+    font-size: 1.2rem;
+    padding: 0.15rem 0;
+}
+
+.rodape__container__titulo {
+    color: black;
+    font-size: large;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+
+
+.rodape__container__redes {
+    display: flex;
+    gap: 15px;
+}
+
+.rodape__container__redes img {
+    height: 20px;
+}
+
+.rodape__container__pagamentos {
+    display: flex;
+    gap: 5px;
+    padding: 10px 0px;
+}
+
+.rodape__permissoes {
+    font-size: 14px;
+    padding: 0px 100px;
+}
