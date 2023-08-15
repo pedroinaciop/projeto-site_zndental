@@ -1,9 +1,9 @@
 .cabecalho {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 90px;
     padding: 15px;
-
     background-color: var(--cor4);
     box-shadow: 1px 1px 5px #0000001a;
 }
@@ -14,7 +14,6 @@
 
 .cabecalho__pesquisa {
     display: flex;
-    align-items: center;
     gap: 8px;
 }
 
@@ -43,6 +42,22 @@
 .icon__login {
     width: 23px;
     padding: 10px;
+}
+
+.carrinho {
+    display: flex;
+    align-items: center;
+}
+
+.icon_carrinho {
+    height: 23px;
+    padding: 0px 10px;
+}
+
+.carrinho p {
+    font-weight: bold;
+    color: var(--cor-fonte);
+    font-size: 1em;    
 }
 
 /*    */
