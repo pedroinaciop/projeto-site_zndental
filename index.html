@@ -7,6 +7,7 @@
     <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
     <link rel="shortcut icon" href="imagens/icons/icon-favicon.png" type="image/x.icon">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./estilos/style.css">
     <title>ZN Dental | Produtos Odontológicos </title>
@@ -44,7 +45,30 @@
     </header>
 
     <main>
+
+
+        <div>
+            <h1>Produtos por marca</h1>
+            <div class="swiper">
+                <div class="swiper-pagination"></div>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="imagens/carrosel/3M.svg" alt=""></div>
+                    <div class="swiper-slide"><img src="imagens/carrosel/AMERICAN BURRS.svg" alt=""></div>
+                    <div class="swiper-slide"><img src="imagens/carrosel/dentsply.svg" alt=""></div>
+                    <div class="swiper-slide"><img src="imagens/carrosel/FGM.svg" alt=""></div>
+                    <div class="swiper-slide"><img src="imagens/carrosel/KULZER.svg" alt=""></div>
+                    <div class="swiper-slide"><img src="imagens/carrosel/MAQUIRA.svg" alt=""></div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-scrollbar"></div>
+            </div>
+        </div>
+
+        
         <div class="container">
+            <h1>Os Produtos Mais Vendidos, com Ofertas Imperdíveis!</h1>
             <div class="container__nicho">
                 <div class="nicho__imagem">
                     <img class="nicho__imagem__img" src="imagens/charisma_diamond.png" alt="Imagem Charisma Diamond">
@@ -207,5 +231,18 @@
         </div>
             <p class="rodape__permissoes">Copyright © 2023 - Todos os direitos reservados | www.zndental.com.br | ZN Dental | CNPJ: 00.000.000/0000-00 | Rua Dr. Olavo Egídio, 274 - Santana - São Paulo - CEP 02037-000 | Autorizações de Funcionamento ANVISA - Medicamentos: 0.00.000-0, Produtos para Saúde (Correlatos): 0.00.000-0, 0.00.000-0, Saneantes Domissanitários: 0.00.000-0, Perfumes/Produtos de Higiene/Cosméticos: 0.00.000-0 | CNPJ: 00.000.000/0000-00 | Farmacêutica responsável: Pedro Pedreira Santos - CRF/SP nº 00.000 | CNPJ: 00.000/0000-17 | Política de Privacidade e Segurança - Fotos meramente ilustrativas - Os preços e condições da loja virtual estão sujeitos a alterações. Em caso de divergência de preços no site, o valor válido é o do Carrinho de Compra.<p>    
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            spaceBetween: 10,
+            slidesPerView: 5,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            }
+        });
+    </script>
+
 </body>
 </html>
