@@ -1,9 +1,29 @@
+main {
+    display: block;
+    margin: auto;
+    width: 1060px;
+}
+
+.subtitle {
+    display: flex;
+    gap: 10px;
+
+    font-size: .7rem;
+    margin-top: 30px;
+    color: var(--cor1);
+}
+
+.subtitle__link a {
+    font-size: .9rem;
+    color: var(--cor2);
+}
+
 .container {
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 20px;
     padding: 15px;
-    height: 90vh;
+    height: 70vh;
 }
 
 .container__nicho {
