@@ -1,6 +1,7 @@
 main {
     display: block;
     margin: auto;
+    height: 100vh;
     width: 1060px;
 }
 
