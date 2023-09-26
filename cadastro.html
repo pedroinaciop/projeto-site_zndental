@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastre-se e aproveite!</title>
+    <link rel="shortcut icon" href="imagens/icons/icon-favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    
+    <header>
+        <nav class="navegacao">
+            <ul class="navegacao__lista">
+                <li class="lista__tipo"><a href="#" class="lista__tipo__link">Dentistas</a></li>
+                <li class="lista__tipo"><a href="#" class="lista__tipo__link">Estudantes</a></li>
+                <li class="lista__tipo"><a href="#" class="lista__tipo__link">Laboratório</a></li>
+                <li class="lista__tipo"><a href="#" class="lista__tipo__link">Equipamentos</a></li>
+            </ul>
+        </nav>
+
+        <div class="cabecalho">  
+            <img src="imagens/logo-zn.png" alt="Logo da ZN Dental" class="cabecalho__logo">
+            <div class="cabecalho__pesquisa">
+                <input type="search" name="" id="" placeholder="Digite o que você procura" class="input__pesquisa">
+            </div>
+            <a href="cadastro.html">
+                <div class="login">
+                    <img src="imagens/icons/icon-login.png" alt="Ícone Login" class="icon__login">
+                    <div>
+                        <p>Olá,</p>
+                        <p><strong>Faça seu conta</strong></p>
+                    </div>
+                </div>
+            </a>
+            <div class="carrinho">
+                <img src="imagens/icons/icon-carrinho.png" alt="Ícone Carrinho" class="icon_carrinho">
+                <p>Carrinho</p>
+            </div>
+        </div>
+    </header> 
+
+    <main>
+        <section class="formulario">
+            <h1 class="titulo_formulario">Cadastre-se</h1>
+                <div class="formulario__dados">
+
+                    <div class="container__dados">
+                        <div class="dados">
+                            <label for="nome">Nome</label>
+                            <input type="text" id="nome" size="40">
+                        </div>
+                        <div class="dados">
+                            <label for="sobrenome">Sobrenome</label>
+                            <input type="text" id="sobrenome" size="40">
+                        </div>
+                    </div>
+                    
+                    <div class="container__dados">
+                        <div class="dados">
+                            <label for="cpf">CPF</label>
+                            <input type="text" id="cpf" placeholder="___.___.___-__" size="40">
+                        </div>
+
+                        <div class="dados">
+                            <label for="nascimento">Data de Nascimento</label>
+                            <input type="date" id="nascimento" placeholder="__/__/__">
+                        </div>
+
+                        <div class="dados">
+                            <label for="sexo">Sexo</label>
+                            <select id="sexo">
+                                <option value="Masculino">Masculino</option>
+                                <option value="Feminino">Feminino</option>
+                                <option value="Não especificado">Não especificado</option>
+                            </select>
+                        </div>
+                    </div>
+   
+                    <div class="container__dados">
+                        <div class="dados">
+                            <label for="celular">Celular</label>
+                            <input type="text" id="celular" placeholder="(__)_____-____" size="40">
+                        </div>
+                        <div class="dados__whats">
+                            <input type="radio" id="whatsapp" >
+                            <label for="whatsapp" id="whatsapp">Esse número é WhatsApp</label>
+                        </div>
+                    </div>
+    
+                    <div class="container__dados">
+                        <div class="dados">
+                            <label for="cep">CEP</label>
+                            <input type="text" id="cep" placeholder="_____-___" size="60">
+                        </div>
+                        <div class="dados">
+                            <label for="uf">UF</label>
+                            <input type="text" id="uf" size="20">
+                        </div>
+                    </div>
+    
+                    <div class="container__dados">
+                        <div class="dados">
+                            <label for="logradouro">Endereço</label>
+                            <input type="text" id="logradouro" size="40">
+                        </div>
+                        <div class="dados">
+                            <label for="complemento">Complemento</label>
+                            <input type="text" id="complemento" size="40">
+                        </div>
+                    </div>
+    
+                    <div class="container__dados">
+                        <div class="dados">
+                            <label for="bairro">Bairro</label>
+                            <input type="text" id="bairro" size="40">
+                        </div>
+                        <div class="dados">
+                            <label for="localidade">Estado</label>
+                            <input type="text" id="localidade" size="40">
+                        </div>      
+                    </div>
+
+                </div>     
+        </section>     
+    </main>
+
+    <footer class="rodape">
+        <div class="rodape__informacoes">
+            <img src="imagens/logo-zn.png" alt="" class="cabecalho__logo">
+            <ul class="rodape__container">
+                <li class="rodape__container__titulo">Ajuda</li>
+                <li class="rodape__container_item">Assistente Virtual</li>
+                <li class="rodape__container_item">Acompanhe seu pedido</li>
+                <li class="rodape__container_item">2ª via do boleto</li>
+                <li class="rodape__container_item">Troca e Devolução</li>
+            </ul>
+            <ul class="rodape__container">
+                <li class="rodape__container__titulo">Atendimento ao Cliente</li>
+                <li class="rodape__container_item">Fale com a gente</li>
+                <li class="rodape__container_item">Dúvidas Frequentes</li>
+                <li class="rodape__container_item">Política Comercial</li>
+                <li class="rodape__container_item">Código de defesa do consumidor</li>
+            </ul>
+            <ul class="rodape__container" >
+                <li class="rodape__container__titulo">Formas de Pagamento</li>
+                <div class="rodape__container__pagamentos">
+                    <li><img src="imagens/icons/ic-billet.svg" alt=""></li>
+                    <li><img src="imagens/icons/ic-amex.svg" alt=""></li>
+                    <li><img src="imagens/icons/ic-elo.svg" alt=""></li>
+                    <li><img src="imagens/icons/ic-hiperCard.svg" alt=""></li>
+                    <li><img src="imagens/icons/ic-visa.svg" alt=""></li>
+                    <li><img src="imagens/icons/ic-master.svg" alt=""></li>
+                </div>
+                <li class="rodape__container_item">Cartão de Crédito</li>
+                <li class="rodape__container_item">Pague em até 12x</li>
+                <li class="rodape__container_item">Confira as condições</li>
+                <li class="rodape__container_item">Boleto Bancário</li>
+                <li class="rodape__container_item">Pague em até 6x</li>
+                <li class="rodape__container_item">Aprovação de crédito sujeita à análise</li>
+                <li class="rodape__container_item">Boleto Antecipado</li>
+                <li class="rodape__container_item">À vista com 3% de desconto em produtos</li>
+            </ul>
+            <ul class="rodape__container">
+                <li class="rodape__container__titulo">Nossas Redes</li>
+                <div class="rodape__container__redes">
+                    <li><a href="#"><img src="imagens/icons/icon-instagram.png" alt="Logo do Instagram"></a></li>
+                    <li><a href="#"><img src="imagens/icons/icon-linkedin.png" alt="Logo do LinkedIn"></a></li>
+                    <li><a href="#"><img src="imagens/icons/icon-tiktok.png" alt="Logo do TikTok"></a></li>
+                    <li><a href="#"><img src="imagens/icons/icon-twitter.png" alt="Logo do Twitter"></a></li>
+                </div>
+            </ul>
+        </div>
+            <p class="rodape__permissoes">Copyright © 2023 - Todos os direitos reservados | www.zndental.com.br | ZN Dental | CNPJ: 00.000.000/0000-00 | Rua Dr. Olavo Egídio, 274 - Santana - São Paulo - CEP 02037-000 | Autorizações de Funcionamento ANVISA - Medicamentos: 0.00.000-0, Produtos para Saúde (Correlatos): 0.00.000-0, 0.00.000-0, Saneantes Domissanitários: 0.00.000-0, Perfumes/Produtos de Higiene/Cosméticos: 0.00.000-0 | CNPJ: 00.000.000/0000-00 | Farmacêutica responsável: Pedro Pedreira Santos - CRF/SP nº 00.000 | CNPJ: 00.000/0000-17 | Política de Privacidade e Segurança - Fotos meramente ilustrativas - Os preços e condições da loja virtual estão sujeitos a alterações. Em caso de divergência de preços no site, o valor válido é o do Carrinho de Compra.<p>    
+    </footer>
+
+</body>
+</html>

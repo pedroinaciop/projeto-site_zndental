@@ -1,0 +1,66 @@
+.formulario {
+    display: block;
+    margin: auto;
+    margin-top: 1.5em;
+    padding: 2.5em;
+    width: 60%;
+    border-radius: 1em;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.194);
+    background-color: var(--cor4);
+    border-top: 3px solid var(--cor1);
+    border-bottom: 3px solid var(--cor1);
+}
+
+.titulo_formulario {
+    font-size: 1.8em;
+    padding: 0 0 .5em 0;
+}
+
+.formulario__dados {
+    display: flex;
+    flex-direction: column;
+}
+
+.container__dados {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    
+}
+
+.dados {
+    display: flex;
+    flex-direction: column;
+}
+
+.dados__whats {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 32px;
+}
+
+#whatsapp {
+    padding: 10px;
+}
+
+label {
+    padding: 10px 0;
+}
+
+input {
+    height: 2em;
+    padding: 0.2em .6em;
+    border-radius: 10px;
+    border: .5px solid var(--cor-fonte);
+}
+
+select {
+    height: 2.4em;
+    padding: 0.2em .6em;
+    border-radius: 10px;
+    border: .5px solid var(--cor-fonte);
+}
+
+
+

@@ -39,6 +39,10 @@
     font-size: .8em;
 }
 
+.login:hover {
+    cursor: pointer;
+}
+
 .icon__login {
     width: 23px;
     padding: 10px;
@@ -47,6 +51,10 @@
 .carrinho {
     display: flex;
     align-items: center;
+}
+
+.carrinho:hover {
+    cursor: pointer;
 }
 
 .icon_carrinho {
