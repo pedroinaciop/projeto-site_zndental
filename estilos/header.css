@@ -48,6 +48,15 @@
     padding: 10px;
 }
 
+.login:hover .caret {
+    transform: rotate(-90deg);
+    transition: .5s;
+}
+
+.login:active .caret {
+    color: var(--cor2);
+}
+
 .carrinho {
     display: flex;
     align-items: center;
