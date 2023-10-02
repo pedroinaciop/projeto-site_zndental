@@ -19,7 +19,7 @@
 
 .input__pesquisa {
     border-radius: 10px;
-    border: 2px solid #99a2ab;
+    border: 1px solid #99a2ab;
     padding: 10px;
     height: 35px;
     width: 300px;
@@ -27,6 +27,11 @@
     background-image: url(../imagens/lupa.png);
     background-position: 96%;
     background-repeat: no-repeat;
+}
+
+.input__pesquisa:focus {
+    outline: 1px solid var(--cor1);
+    border: 0px;
 }
 
 .login {
@@ -46,6 +51,10 @@
 .icon__login {
     width: 23px;
     padding: 10px;
+}
+
+.caret {
+    color: var(--cor1);
 }
 
 .login:hover .caret {

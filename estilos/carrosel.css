@@ -11,6 +11,11 @@
 .swiper-slide img {
     height: 90px;
     width: 150px; 
+    filter: grayscale(100%);
+}
+
+.swiper-slide img:hover{
+    filter: grayscale(0%);
 }
 
 .swiper-slide:hover {
