@@ -68,6 +68,7 @@ main {
 .descricao {
     color: #667381;
     font-size: .7em;
+    height: 30px;
 }
 
 .preco_anterior {
