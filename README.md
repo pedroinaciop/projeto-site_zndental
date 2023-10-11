@@ -1,6 +1,6 @@
 # E-commerce ZN Dental
 
-[![NPM](https://img.shields.io/npm/l/react)](https://github.com/pedroinaciop/Projeto-AluraCast/blob/main/LICENSE) 
+[![NPM](https://img.shields.io/npm/l/react)](https://github.com/pedroinaciop/projeto-site_zndental/blob/main/LICENSE) 
 
 # Sobre o projeto
 
