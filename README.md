@@ -19,7 +19,7 @@ O ZN Dental é um projeto pessoal do em HTML, CSS e JS onde testo meus recentes 
 
 ## Autor
 
-Pedro Inácio Penha dos Santos - Curso Alura
+Pedro Inácio Penha dos Santos
 
 https://www.linkedin.com/in/pedroinaciop/
 
