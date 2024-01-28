@@ -23,8 +23,6 @@
     padding: 10px;
     height: 35px;
     width: 300px;
-
-    background-image: url(../imagens/lupa.png);
     background-position: 96%;
     background-repeat: no-repeat;
 }
@@ -85,8 +83,6 @@
     color: var(--cor-fonte);
     font-size: 1em;    
 }
-
-/*    */
 
 .navegacao {
     background-color: var(--cor4);

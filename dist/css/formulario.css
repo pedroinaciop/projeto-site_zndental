@@ -66,7 +66,28 @@ select {
 input:read-only {
     background-color: rgba(0, 0, 0, 0.094);
 }
-  
 
+#cadastrar {
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.194);
+    background-color: var(--cor1);    
+    color: var(--cor4);
+    padding: 12px;
+    border: 0;
+    border-radius: 10px;
+    font-size: 18px;     
+    font-weight: bold;
+    margin: 10px;
+    width: 20%;
+}
 
+#cadastrar:hover {
+    box-shadow: 0;
+    background-color: var(--cor0);
+    cursor: pointer;
+}
 
+#cadastrar:active {
+    box-shadow: 0px 0px 0px;
+    background-color: var(--cor4);    
+    color: var(--cor0);  
+}

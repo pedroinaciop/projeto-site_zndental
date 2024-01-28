@@ -57,7 +57,6 @@ main {
     width: 180px;
 }
 
-/*------------------------------------------------------------*/
 
 .nicho__informacoes {
     display: flex;
@@ -85,10 +84,17 @@ main {
 }
 
 .comprar {
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.194);
     background-color: var(--cor0);
     color: white;
     font-size: 1.3em;
     border-radius: 10px;
     padding: 20px;
     text-align: center;
+    cursor: pointer;
+    border: 0;
+}
+
+.comprar:hover {
+    background-color: var(--cor1);
 }
