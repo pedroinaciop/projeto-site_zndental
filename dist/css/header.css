@@ -84,6 +84,23 @@
     font-size: 1em;    
 }
 
+.notificacao_carrinho {
+    background-color: var(--cor6);
+    border-radius: 50%;
+    color: #fff;
+    width: 15px;
+    height: 15px;
+    font-size: 10px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+
+    position: relative;
+    bottom: 10px;
+    left: 20px;
+}
+
 .navegacao {
     background-color: var(--cor4);
     border: 1px solid #66738150;

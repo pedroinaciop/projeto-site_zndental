@@ -1,5 +1,3 @@
-
-
 buscarProdutosAPI();
 
 async function buscarProdutosAPI() {
@@ -29,11 +27,20 @@ function exibirProdutosNaTela(itens: any): void {
         
     });
 
+    let produtosCarrinho:number = 0
     const elementoProduto = document.querySelectorAll(".container__nicho");
     elementoProduto.forEach((elemento) => {
         elemento.addEventListener("click", (event) => {
             const elementoClicado = event.currentTarget as HTMLElement;
-            console.log("Elemento clicado:", elementoClicado);
+            
+            const nomeProduto = elementoClicado.querySelector(".nome_produto") as HTMLElement;
+            const precoProduto = elementoClicado.querySelector(".preco_atual") as HTMLElement;
+            const notificacaoCarrinho = document.querySelector(".notificacao_carrinho") as HTMLElement;
+
+            notificacaoCarrinho.style.display = 'flex';
+            produtosCarrinho += 1;
+            notificacaoCarrinho.textContent = produtosCarrinho.toString();
+            console.log(nomeProduto, precoProduto, notificacaoCarrinho, produtosCarrinho);        
         });
     });    
 };

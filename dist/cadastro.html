@@ -52,7 +52,7 @@
                 <div class="container__dados">
                     <div class="dados">
                         <label for="email">E-mail</label>
-                        <input type="email" id="email" size="40" maxlength="50" required>
+                        <input type="email" id="email" size="40" maxlength="40" required>
                     </div>
                     <div class="dados">
                         <label for="senha">Senha</label>
@@ -63,18 +63,18 @@
                 <div class="container__dados">
                     <div class="dados">
                         <label for="nome">Nome</label>
-                        <input type="text" id="nome" size="40" maxlength="20" required>
+                        <input type="text" id="nome" size="40" maxlength="40" required>
                     </div>
                     <div class="dados">
                         <label for="sobrenome">Sobrenome</label>
-                        <input type="text" id="sobrenome" size="40" maxlength="30" required>
+                        <input type="text" id="sobrenome" size="40" maxlength="40" required>
                     </div>
                 </div>
                     
                 <div class="container__dados">
                     <div class="dados">
                         <label for="cpf">CPF</label>
-                        <input type="text" id="cpf" placeholder="___.___.___-__" size="40" required oninput="mascara(this, 'cpf')">
+                        <input type="text" id="cpf" placeholder="___.___.___-__" size="40" oninput="mascara(this, 'cpf')">
                     </div>
                     <div class="dados">
                         <label for="nascimento">Data de Nascimento</label>
@@ -119,18 +119,18 @@
                         </div>
                         <div class="dados">
                             <label for="complemento">Complemento</label>
-                            <input type="text" id="complemento" size="40" required>
+                            <input type="text" id="complemento" size="40" maxlength="30" required>
                         </div>
                     </div>
     
                     <div class="container__dados">
                         <div class="dados">
                             <label for="bairro">Bairro</label>
-                            <input type="text" id="bairro" size="40" readonly required>
+                            <input type="text" id="bairro" size="40" readonly>
                         </div>
                         <div class="dados">
                             <label for="localidade">Estado</label>
-                            <input type="text" id="localidade" size="40" readonly required>
+                            <input type="text" id="localidade" size="40" readonly>
                         </div>      
                     </div>
                 <button type="submit" id="cadastrar">CADASTRAR</button>
@@ -186,6 +186,7 @@
             <p class="rodape__permissoes">Copyright © 2023 - Todos os direitos reservados | www.zndental.com.br | ZN Dental | CNPJ: 00.000.000/0000-00 | Rua Dr. Olavo Egídio, 274 - Santana - São Paulo - CEP 02037-000 | Autorizações de Funcionamento ANVISA - Medicamentos: 0.00.000-0, Produtos para Saúde (Correlatos): 0.00.000-0, 0.00.000-0, Saneantes Domissanitários: 0.00.000-0, Perfumes/Produtos de Higiene/Cosméticos: 0.00.000-0 | CNPJ: 00.000.000/0000-00 | Farmacêutica responsável: Pedro Pedreira Santos - CRF/SP nº 00.000 | CNPJ: 00.000/0000-17 | Política de Privacidade e Segurança - Fotos meramente ilustrativas - Os preços e condições da loja virtual estão sujeitos a alterações. Em caso de divergência de preços no site, o valor válido é o do Carrinho de Compra.<p>    
     </footer>
 
+    <script src="js/mascara.js"></script>
     <script type="module" src="js/form.js"></script>
 </body>
 </html>

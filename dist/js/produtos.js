@@ -22,11 +22,18 @@ function exibirProdutosNaTela(itens) {
                 <button type="submit" class="comprar">ADICIONAR</button>
         </div>`;
     });
+    let produtosCarrinho = 0;
     const elementoProduto = document.querySelectorAll(".container__nicho");
     elementoProduto.forEach((elemento) => {
         elemento.addEventListener("click", (event) => {
             const elementoClicado = event.currentTarget;
-            console.log("Elemento clicado:", elementoClicado);
+            const nomeProduto = elementoClicado.querySelector(".nome_produto");
+            const precoProduto = elementoClicado.querySelector(".preco_atual");
+            const notificacaoCarrinho = document.querySelector(".notificacao_carrinho");
+            notificacaoCarrinho.style.display = 'flex';
+            produtosCarrinho += 1;
+            notificacaoCarrinho.textContent = produtosCarrinho.toString();
+            console.log(nomeProduto, precoProduto, notificacaoCarrinho, produtosCarrinho);
         });
     });
 }
