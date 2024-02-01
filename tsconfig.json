@@ -6,5 +6,5 @@
     },
     "include": [
         "./src/*"
-    ]
+, "src/util/Cadastro.ts", "src/util/Sexo.ts", "src/util/mascara.ts"    ]
 }

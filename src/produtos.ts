@@ -1,3 +1,5 @@
+import { adicionarItensAoCarrinho } from "./adicionarCarrinho.js";
+
 buscarProdutosAPI();
 
 async function buscarProdutosAPI() {
@@ -8,7 +10,7 @@ async function buscarProdutosAPI() {
 
 const elementoParaInserirProdutos = document.querySelector('#container__nicho') as HTMLElement;
 
-function exibirProdutosNaTela(itens: any): void {
+export function exibirProdutosNaTela(itens: any): void {
     itens.forEach((produto: { imagem: any; alt: any; nome_produto: string; marca: string; 
                               descricao: string; preco_anterior: number; preco: number; }) => {
     elementoParaInserirProdutos.innerHTML += ` 
@@ -26,22 +28,5 @@ function exibirProdutosNaTela(itens: any): void {
         </div>`
         
     });
-
-    let produtosCarrinho:number = 0
-    const elementoProduto = document.querySelectorAll(".container__nicho");
-    elementoProduto.forEach((elemento) => {
-        elemento.addEventListener("click", (event) => {
-            const elementoClicado = event.currentTarget as HTMLElement;
-            
-            const nomeProduto = elementoClicado.querySelector(".nome_produto") as HTMLElement;
-            const precoProduto = elementoClicado.querySelector(".preco_atual") as HTMLElement;
-            const notificacaoCarrinho = document.querySelector(".notificacao_carrinho") as HTMLElement;
-
-            notificacaoCarrinho.style.display = 'flex';
-            produtosCarrinho += 1;
-            notificacaoCarrinho.textContent = produtosCarrinho.toString();
-            console.log(nomeProduto, precoProduto, notificacaoCarrinho, produtosCarrinho);        
-        });
-    });    
+    adicionarItensAoCarrinho(); 
 };
-

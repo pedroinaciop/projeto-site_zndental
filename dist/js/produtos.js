@@ -1,3 +1,4 @@
+import { adicionarItensAoCarrinho } from "./adicionarCarrinho.js";
 buscarProdutosAPI();
 async function buscarProdutosAPI() {
     const dados = await fetch('https://pedroinaciop.github.io/zndental/dados.json');
@@ -6,7 +7,7 @@ async function buscarProdutosAPI() {
 }
 ;
 const elementoParaInserirProdutos = document.querySelector('#container__nicho');
-function exibirProdutosNaTela(itens) {
+export function exibirProdutosNaTela(itens) {
     itens.forEach((produto) => {
         elementoParaInserirProdutos.innerHTML += ` 
         <div action="" class="container__nicho">
@@ -22,19 +23,6 @@ function exibirProdutosNaTela(itens) {
                 <button type="submit" class="comprar">ADICIONAR</button>
         </div>`;
     });
-    let produtosCarrinho = 0;
-    const elementoProduto = document.querySelectorAll(".container__nicho");
-    elementoProduto.forEach((elemento) => {
-        elemento.addEventListener("click", (event) => {
-            const elementoClicado = event.currentTarget;
-            const nomeProduto = elementoClicado.querySelector(".nome_produto");
-            const precoProduto = elementoClicado.querySelector(".preco_atual");
-            const notificacaoCarrinho = document.querySelector(".notificacao_carrinho");
-            notificacaoCarrinho.style.display = 'flex';
-            produtosCarrinho += 1;
-            notificacaoCarrinho.textContent = produtosCarrinho.toString();
-            console.log(nomeProduto, precoProduto, notificacaoCarrinho, produtosCarrinho);
-        });
-    });
+    adicionarItensAoCarrinho();
 }
 ;

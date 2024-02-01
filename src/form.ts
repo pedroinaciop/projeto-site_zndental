@@ -1,5 +1,5 @@
-import { Cadastro } from "./Cadastro.js";
-import { Sexo } from "./Sexo.js";
+import { Cadastro } from "./util/Cadastro.js";
+import { Sexo } from "./util/Sexo.js";
 
 const elementoFormulario = document.querySelector(".formulario") as HTMLFormElement;
 elementoFormulario.addEventListener("submit", function(event)  {
