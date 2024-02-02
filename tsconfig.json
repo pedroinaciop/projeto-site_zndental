@@ -2,9 +2,11 @@
     "compilerOptions": {
         "target": "ES2022",
         "outDir": "./dist/js/",
-        "noEmitOnError": true
+        "noEmitOnError": false
     },
     "include": [
-        "./src/*"
-, "src/util/Cadastro.ts", "src/util/Sexo.ts", "src/util/mascara.ts"    ]
+        "./src/*", 
+        "src/util/Cadastro.ts", 
+        "src/util/Sexo.ts", 
+        "src/util/mascara.ts"    ]
 }

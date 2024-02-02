@@ -21,7 +21,7 @@ elementoFormulario.addEventListener("submit", function (event) {
     let nome = inputNome.value;
     let sobrenome = inputSobrenome.value;
     let CPF = inputCPF.value;
-    let dataNascimento = new Date(inputDataNascimento.value);
+    let dataNascimento = new Date(inputDataNascimento.value + " 00:00:00");
     let sexo = inputSexo.value;
     let celular = inputCelular.value;
     let whatsAppSN = inputWhatsAppSN.value;

@@ -11,8 +11,8 @@ async function buscarProdutosAPI() {
 const elementoParaInserirProdutos = document.querySelector('#container__nicho') as HTMLElement;
 
 export function exibirProdutosNaTela(itens: any): void {
-    itens.forEach((produto: { imagem: any; alt: any; nome_produto: string; marca: string; 
-                              descricao: string; preco_anterior: number; preco: number; }) => {
+    itens.forEach((produto: { imagem: any; alt: string; nome_produto: string; marca: string; 
+                              descricao: string; preco_anterior: number; preco: number; codigo: string}) => {
     elementoParaInserirProdutos.innerHTML += ` 
         <div action="" class="container__nicho">
             <div class="nicho__imagem">
@@ -23,8 +23,12 @@ export function exibirProdutosNaTela(itens: any): void {
                 <p class="descricao">${produto.descricao}.</p>
                 <p class="preco_anterior">R$${produto.preco_anterior.toFixed(2)}</p>
                 <p class="preco_atual">R$${produto.preco.toFixed(2)}</p>
+                <p class="codigo_produto">(Cód. ${produto.codigo})</p>
             </div>
-                <button type="submit" class="comprar">ADICIONAR</button>
+            <div class="quantidade_adicionada">
+                <button type="submit" class="comprar">Adicionar</button>
+                <input type="number" value="1" min="1" max="999" class="quantidade_selecionada">
+            </div>
         </div>`
         
     });
