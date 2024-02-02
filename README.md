@@ -1,4 +1,3 @@
-<<<<<<< HEAD:github/README.md
 # E-commerce ZN Dental
 
 [![NPM](https://img.shields.io/npm/l/react)](https://github.com/pedroinaciop/projeto-site_zndental/blob/main/LICENSE) 
