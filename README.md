@@ -15,7 +15,7 @@ O ZN Dental é um projeto pessoal feito em HTML, CSS e TypeScript onde testo meu
 ![Web 2](https://pedroinaciop.github.io/projeto-site_zndental/dist/images/web-2.png)
 
 ## Tecnologias utilizadas
-[![Minhas Habilidades](https://skillicons.dev/icons?i=html,css,ts)](https://skillicons.dev)
+[![Minhas Habilidades](https://skillicons.dev/icons?i=html,css,js,ts)](https://skillicons.dev)
 
 ## Autor
 
