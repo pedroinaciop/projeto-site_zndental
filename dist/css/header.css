@@ -55,9 +55,17 @@
     color: var(--cor1);
 }
 
+@keyframes novaAnimacao {
+    0%, 100% {
+        transform: rotate(0deg);
+      }
+      50% {
+        transform: rotate(-90deg);
+      }
+}
+
 .login:hover .caret {
-    transform: rotate(-90deg);
-    transition: .5s;
+    animation: novaAnimacao 1s;
 }
 
 .login:active .caret {

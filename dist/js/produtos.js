@@ -1,6 +1,6 @@
-import { adicionarItensAoCarrinho } from "./adicionarCarrinho.js";
+import { adicionarItensAoCarrinho } from "./funcoesCarrinho.js";
 buscarProdutosAPI();
-async function buscarProdutosAPI() {
+export async function buscarProdutosAPI() {
     const dados = await fetch('https://pedroinaciop.github.io/zndental/dados.json');
     const produtos = await dados.json();
     exibirProdutosNaTela(produtos);
@@ -22,8 +22,8 @@ export function exibirProdutosNaTela(itens) {
                 <p class="codigo_produto">(Cód. ${produto.codigo})</p>
             </div>
             <div class="quantidade_adicionada">
-                <button type="submit" class="comprar">Adicionar</button>
-                <input type="number" value="1" min="1" max="999" class="quantidade_selecionada">
+                <button type="submit" class="comprar quantidade_selecionada">Adicionar</button>
+
             </div>
         </div>`;
     });

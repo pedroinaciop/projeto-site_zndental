@@ -8,16 +8,33 @@
     border-radius: 10px;
     width: 600px;
     height: 90px;
-    padding: 30px;
+    padding: 25px;
     margin: 30px;
 
     display: flex;
     gap: 30px;
 }
+
+.produto_imagem_carrinho {
+    width: 120px;
+    height: 90px;
+}
+
+.produto_informacoes {
+    width: 300px;
+    height: 90px;
+}
    
 .produto_valor_carrinho {
     text-align: center;
     padding: 15px 0px;
+}
+
+.produto_remover {
+    cursor: pointer;
+    margin-top: 6px;
+    width: 20px;
+    height: 20px;
 }
 
 .container_calculo {
