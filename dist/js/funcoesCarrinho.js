@@ -35,7 +35,4 @@ export function notificacaoCarrinho() {
     notificacaoCarrinho.style.display = 'flex';
     notificacaoCarrinho.textContent = total.toString();
 }
-export function removerItemDoCarrinho() {
-    console.log("olá");
-}
 visualizarItensCarrinho();

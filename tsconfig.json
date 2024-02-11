@@ -11,3 +11,13 @@
         "src/util/mascara.ts", "src/funcoesCarrinho.ts", "src/formUsuario.ts", "src/components/notificacaoCarrinho.ts", "src/produtos.ts", "src/visualizarProdutosCarrinho.ts"    
     ]
 }
+
+// const removerItem = document.querySelectorAll(".btn_remover");
+// removerItem.forEach((elemento) => {
+//     elemento.addEventListener("click", (event) => {
+//         localStorage.removeItem('carrinho')
+//         const elementoClicado = event.target as HTMLElement;
+//         const nomeInput = elementoClicado.querySelector(".produto_nome_carrinho") as HTMLElement;
+//         console.log(nomeInput)
+//     });
+// })
