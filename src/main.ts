@@ -1,5 +1,4 @@
-import { adicionarItensAoCarrinho } from "./funcoesCarrinho.js";
-import { visualizarItensCarrinho } from "./visualizarProdutosCarrinho.js";
+import { adicionarItensAoCarrinho, visualizarItensCarrinho } from "./funcoesCarrinho.js";
 import { buscarProdutosAPI } from "./produtos.js";
 import { cadastrarUsuario } from "./formUsuario.js";
 
