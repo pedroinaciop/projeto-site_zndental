@@ -50,7 +50,7 @@ export function visualizarItensCarrinho () {
     const carrinhoSalvo = JSON.parse(carrinhoSalvoString);
     
     const elementoCarrinho:HTMLElement = document.querySelector(".container_view_carrinho") as HTMLElement;
-    const carrinhoVazio = document.querySelector(".container_carrinho")
+    const carrinhoVazio = document.querySelector(".container_carrinho");
 
     if (carrinhoSalvo && elementoCarrinho) {
         elementoCarrinho.removeChild(carrinhoVazio);
@@ -68,7 +68,7 @@ export function visualizarItensCarrinho () {
                 </div>
                 <img src="../dist/images/lata-de-lixo.png" class="btn_excluir_produto"></img>
             </section>`
-            removerItemCarrinho()
+            removerItemCarrinho();
         }
     }
 }
@@ -77,11 +77,26 @@ function removerItemCarrinho() {
     const removerItem = document.querySelectorAll(".btn_excluir_produto");
     removerItem.forEach((elemento) => {
         elemento.addEventListener("click", (event) => {
-            localStorage.removeItem('carrinho')
-            const elementoClicado = event.target as HTMLElement;
-            location.reload()
+            let carrinho: string = localStorage.getItem('carrinho');
+            let arrayCarrinhoRecuperado = JSON.parse(carrinho);
+
+            const elementoClicado = event.currentTarget as HTMLElement;
+            const nomeElementoClicado = elementoClicado.parentElement.querySelector(".produto_nome_carrinho") as HTMLElement;
+
+            for (let i=0;i<=arrayCarrinhoRecuperado.length;i++) {
+                if (arrayCarrinhoRecuperado[i].nome == nomeElementoClicado.textContent) {
+                    arrayCarrinhoRecuperado.splice([i], 1);
+                    localStorage.setItem('carrinho', JSON.stringify(arrayCarrinhoRecuperado));
+                    location.reload();
+                }
+            }
+
+            if (arrayCarrinhoRecuperado.length == 0) {
+                localStorage.removeItem('carrinho');
+            }
         });
     })
 }
+
 
 visualizarItensCarrinho();

@@ -63,9 +63,20 @@ function removerItemCarrinho() {
     const removerItem = document.querySelectorAll(".btn_excluir_produto");
     removerItem.forEach((elemento) => {
         elemento.addEventListener("click", (event) => {
-            localStorage.removeItem('carrinho');
-            const elementoClicado = event.target;
-            location.reload();
+            let carrinho = localStorage.getItem('carrinho');
+            let arrayCarrinhoRecuperado = JSON.parse(carrinho);
+            const elementoClicado = event.currentTarget;
+            const nomeElementoClicado = elementoClicado.parentElement.querySelector(".produto_nome_carrinho");
+            for (let i = 0; i <= arrayCarrinhoRecuperado.length; i++) {
+                if (arrayCarrinhoRecuperado[i].nome == nomeElementoClicado.textContent) {
+                    arrayCarrinhoRecuperado.splice([i], 1);
+                    localStorage.setItem('carrinho', JSON.stringify(arrayCarrinhoRecuperado));
+                    location.reload();
+                }
+            }
+            if (arrayCarrinhoRecuperado.length == 0) {
+                localStorage.removeItem('carrinho');
+            }
         });
     });
 }
