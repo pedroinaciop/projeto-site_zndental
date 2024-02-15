@@ -49,6 +49,13 @@ elementoFormulario.addEventListener("submit", function (event) {
         senha: senha
     };
     console.log(novoCadastro);
+    Swal.fire({
+        position: "center",
+        icon: "success",
+        title: `Usuário ${nome} ${sobrenome} cadastrado com sucesso!`,
+        showConfirmButton: false,
+        timer: 2000
+    });
     elementoFormulario.reset();
 });
 async function buscaCep(cep) {

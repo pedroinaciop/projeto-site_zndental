@@ -1,4 +1,4 @@
-import { adicionarItensAoCarrinho } from "./funcoesCarrinho.js";
+import { adicionarItensAoCarrinho } from "./exibirProdutoNoCarrinho.js";
 
 buscarProdutosAPI();
 export async function buscarProdutosAPI() {
@@ -10,8 +10,8 @@ export async function buscarProdutosAPI() {
 const elementoParaInserirProdutos = document.querySelector('#container__nicho') as HTMLElement;
 
 export function exibirProdutosNaTela(itens: any): void {
-    itens.forEach((produto: { imagem: any; alt: string; nome_produto: string; marca: string; 
-                              descricao: string; preco_anterior: number; preco: number; codigo: string}) => {
+    itens.forEach((produto: { imagem: any; alt: string; nome_produto: string; marca: 
+    string; descricao: string; preco_anterior: number; preco: number; codigo: string}) => {
     elementoParaInserirProdutos.innerHTML += ` 
         <div action="" class="container__nicho">
             <div class="nicho__imagem">
@@ -32,10 +32,10 @@ export function exibirProdutosNaTela(itens: any): void {
             </div>
             <div class="quantidade_adicionada">
                 <button type="submit" class="comprar quantidade_selecionada">Adicionar</button>
-
             </div>
         </div>`
         
     });
     adicionarItensAoCarrinho(); 
+    
 };
