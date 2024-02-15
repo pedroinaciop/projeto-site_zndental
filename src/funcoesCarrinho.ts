@@ -55,7 +55,7 @@ export function visualizarItensCarrinho(): void {
                 </div>
                 <div class="container_preco">
                     <input type="number" value="1" min="1" max="999" class="produto_quantidade">
-                    <h3 class="produto_valor_carrinho">${carrinhoSalvo[i].preco}</h3>
+                    <h3 class="produto_valor_carrinho">R$${carrinhoSalvo[i].preco}</h3>
                 </div>
                 <img src="../dist/images/lata-de-lixo.png" class="btn_excluir_produto"></img>
             </section>`

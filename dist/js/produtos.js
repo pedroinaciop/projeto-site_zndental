@@ -17,8 +17,14 @@ export function exibirProdutosNaTela(itens) {
             <div class="nicho__informacoes">
                 <p class="nome_produto">${produto.nome_produto} ${produto.marca}</p>
                 <p class="descricao">${produto.descricao}.</p>
-                <p class="preco_anterior">${produto.preco_anterior.toFixed(2)}</p>
-                <p class="preco_atual">${produto.preco.toFixed(2)}</p>
+                <div class="container_precos_anteriores">
+                    <p>R$</p>
+                    <p class="preco_anterior">${produto.preco_anterior.toFixed(2)}</p>
+                </div>
+                <div class="container_precos_atuais">
+                    <p>R$</p>
+                    <p class="preco_atual">${produto.preco.toFixed(2)}</p>
+                </div>
                 <p class="codigo_produto">(Cód. ${produto.codigo})</p>
             </div>
             <div class="quantidade_adicionada">
