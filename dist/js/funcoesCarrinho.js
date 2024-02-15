@@ -27,14 +27,8 @@ export function adicionarItensAoCarrinho() {
         });
     });
 }
-export function notificacaoCarrinho() {
-    let produtosCarrinho = JSON.parse(localStorage.getItem('carrinho'));
-    let total = produtosCarrinho.length;
-    let notificacaoCarrinho = document.querySelector(".notificacao_carrinho");
-    notificacaoCarrinho.style.display = 'flex';
-    notificacaoCarrinho.textContent = total.toString();
-}
 export function visualizarItensCarrinho() {
+    const precos = [];
     const carrinhoSalvoString = localStorage.getItem('carrinho');
     const carrinhoSalvo = JSON.parse(carrinhoSalvoString);
     const elementoCarrinho = document.querySelector(".container_view_carrinho");
@@ -44,7 +38,7 @@ export function visualizarItensCarrinho() {
         for (let i = 0; i <= carrinhoSalvo.length; i++) {
             elementoCarrinho.innerHTML += `
             <section class="container_carrinho">   
-                    <img src="${carrinhoSalvo[i].imagem}" alt="" class="produto_imagem_carrinho">
+                <img src="${carrinhoSalvo[i].imagem}" alt="" class="produto_imagem_carrinho">
                 <div class="produto_informacoes">
                     <h3 class="produto_nome_carrinho">${carrinhoSalvo[i].nome}</h3>
                     <p class="produto_codigo_carrinho">${carrinhoSalvo[i].codigo}</p>
@@ -55,16 +49,34 @@ export function visualizarItensCarrinho() {
                 </div>
                 <img src="../dist/images/lata-de-lixo.png" class="btn_excluir_produto"></img>
             </section>`;
+            precos.push(carrinhoSalvo[i].preco);
+            calcularTotal(precos);
             removerItemCarrinho();
         }
     }
+}
+export function notificacaoCarrinho() {
+    let notificacaoCarrinho = document.querySelector(".notificacao_carrinho");
+    let produtosCarrinho = JSON.parse(localStorage.getItem('carrinho'));
+    let total = produtosCarrinho.length;
+    notificacaoCarrinho.style.display = 'flex';
+    return notificacaoCarrinho.textContent = total.toString();
+}
+function calcularTotal(precos) {
+    const totalElemento = document.querySelector(".valor_total");
+    let sum = 0;
+    for (let i = 0; i < precos.length; i++) {
+        const precosCovertidos = parseFloat(precos[i]);
+        sum += precosCovertidos;
+    }
+    return totalElemento.textContent = `R$${sum.toFixed(2)}`;
 }
 function removerItemCarrinho() {
     const removerItem = document.querySelectorAll(".btn_excluir_produto");
     removerItem.forEach((elemento) => {
         elemento.addEventListener("click", (event) => {
-            let carrinho = localStorage.getItem('carrinho');
-            let arrayCarrinhoRecuperado = JSON.parse(carrinho);
+            const carrinho = localStorage.getItem('carrinho');
+            const arrayCarrinhoRecuperado = JSON.parse(carrinho);
             const elementoClicado = event.currentTarget;
             const nomeElementoClicado = elementoClicado.parentElement.querySelector(".produto_nome_carrinho");
             for (let i = 0; i <= arrayCarrinhoRecuperado.length; i++) {

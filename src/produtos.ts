@@ -20,8 +20,8 @@ export function exibirProdutosNaTela(itens: any): void {
             <div class="nicho__informacoes">
                 <p class="nome_produto">${produto.nome_produto} ${produto.marca}</p>
                 <p class="descricao">${produto.descricao}.</p>
-                <p class="preco_anterior">R$${produto.preco_anterior.toFixed(2)}</p>
-                <p class="preco_atual">R$${produto.preco.toFixed(2)}</p>
+                <p class="preco_anterior">${produto.preco_anterior.toFixed(2)}</p>
+                <p class="preco_atual">${produto.preco.toFixed(2)}</p>
                 <p class="codigo_produto">(Cód. ${produto.codigo})</p>
             </div>
             <div class="quantidade_adicionada">
