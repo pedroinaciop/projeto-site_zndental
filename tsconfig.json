@@ -8,6 +8,6 @@
         "./src/*", 
         "src/util/Cadastro.ts", 
         "src/util/Sexo.ts", 
-        "src/util/mascara.ts", "src/funcoesCarrinho.ts", "src/formUsuario.ts", "src/components/notificacaoCarrinho.ts", "src/produtos.ts", "src/visualizarProdutosCarrinho.ts"    
+        "src/util/mascara.ts", "src/funcoesCarrinho.ts", "src/formUsuario.ts", "src/components/notificacaoCarrinho.ts", "src/exibirProdutosNaTela.ts", "src/visualizarProdutosCarrinho.ts"    
     ]
 }
