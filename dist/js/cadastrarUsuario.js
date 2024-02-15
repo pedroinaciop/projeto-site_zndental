@@ -67,5 +67,4 @@ async function buscaCep(cep) {
 }
 let cep = document.querySelector('#cep');
 cep.addEventListener("focusout", () => buscaCep(cep.value));
-console.log(cep);
 export {};

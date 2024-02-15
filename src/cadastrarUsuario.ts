@@ -55,9 +55,7 @@ elementoFormulario.addEventListener("submit", function(event)  {
       email: email,
       senha: senha
    }
-
    console.log(novoCadastro);
-   
    elementoFormulario.reset();
 });
    
@@ -80,4 +78,3 @@ async function buscaCep(cep: string) {
 
 let cep = document.querySelector('#cep') as HTMLInputElement;
 cep.addEventListener("focusout", () => buscaCep(cep.value));
-console.log(cep)
