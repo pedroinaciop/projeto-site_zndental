@@ -1,5 +1,5 @@
 .cabecalho {
-    width: 100vw;
+    width: 100%;
 
     display: flex;
     justify-content: center;
@@ -10,6 +10,10 @@
     background-color: var(--cor4);
     box-shadow: 1px 1px 5px #0000001a;
     align-items: center;
+}
+
+.menu_hamburguer {
+    display: none;
 }
 
 .cabecalho__direito {   

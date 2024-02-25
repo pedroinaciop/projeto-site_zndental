@@ -1,5 +1,20 @@
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 1100px) {
     /* CABECALHO */
+
+    .menu_hamburguer {
+        width: 2.5rem;
+
+        display: block;   
+    }
+
+    .cabecalho {
+        justify-content: space-between;
+    }
+
+    .cabecalho__direito {
+        gap: 1rem;
+    }
+
     .elementos__cabecalho {
         display: none;
     }
