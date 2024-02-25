@@ -7,6 +7,10 @@
         display: block;   
     }
 
+    .icon__login {
+        display: none;
+    }
+
     .cabecalho {
         justify-content: space-between;
     }
