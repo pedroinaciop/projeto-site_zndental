@@ -1,35 +1,43 @@
 .cabecalho {
+    width: 100vw;
+
     display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 90px;
-    padding: 15px;
+    gap: 5.6rem;
+
+    padding: .9rem;
+
     background-color: var(--cor4);
     box-shadow: 1px 1px 5px #0000001a;
+    align-items: center;
+}
+
+.cabecalho__direito {   
+    display: flex;
+    gap: 5.6rem;
 }
 
 .cabecalho__logo {
-    height: 55px;
+    height: 3.4rem;
 }
 
 .cabecalho__pesquisa {
     display: flex;
-    gap: 8px;
+    gap: .5rem;
 }
 
 .input__pesquisa {
-    border-radius: 10px;
+    height: 2rem;
+    width: 18.75rem;
+    padding: 0.6rem;
+
+    border-radius: .6rem;
     border: 1px solid #99a2ab;
-    padding: 10px;
-    height: 35px;
-    width: 300px;
-    background-position: 96%;
-    background-repeat: no-repeat;
 }
 
 .input__pesquisa:focus {
+    border: 0;
     outline: 1px solid var(--cor1);
-    border: 0px;
 }
 
 .login {
@@ -47,8 +55,8 @@
 }
 
 .icon__login {
-    width: 23px;
-    padding: 10px;
+    width: 1.4rem;
+    padding: .6rem;
 }
 
 .caret {
@@ -82,14 +90,15 @@
 }
 
 .icon_carrinho {
-    height: 23px;
-    padding: 0px 10px;
+    height: 1.4rem;
+    padding: 0rem .6rem;
 }
 
 .carrinho p {
-    font-weight: bold;
     color: var(--cor-fonte);
-    font-size: 1em;    
+
+    font-weight: bold;
+    font-size: 1rem;    
 }
 
 .link_carrinho {
@@ -97,20 +106,21 @@
 }
 
 .notificacao_carrinho {
-    background-color: var(--cor6);
-    border-radius: 50%;
-    color: #fff;
-    width: 15px;
-    height: 15px;
-    font-size: 10px;
-    display: none;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
+    height: .9rem;
+    width: .9rem;
 
+    display: none;
+    justify-content: center;
     position: relative;
-    bottom: 10px;
-    left: 20px;
+    bottom: .6rem;
+    left: 1.25rem;
+        
+    color: #fff;
+    background-color: var(--cor6);
+    font-weight: bold;
+    font-size: 0.6rem;
+    align-items: center;
+    border-radius: 50%;
 }
 
 .navegacao {
@@ -121,8 +131,9 @@
 .navegacao__lista {
     display: flex;
     justify-content: center;
-    gap: 40px;
-    padding: 10px;
+    gap: 2.5rem;
+    
+    padding: .6rem;
     list-style-type: none;
 }
 

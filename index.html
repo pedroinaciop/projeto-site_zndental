@@ -27,27 +27,31 @@
             <a href="index.html">
                 <img src="dist/images/logo-zn.png" alt="Logo da ZN Dental" class="cabecalho__logo">
             </a>
-            <div class="cabecalho__pesquisa">
-                <input type="search" name="" id="" placeholder="Digite o que você procura" class="input__pesquisa">
+
+            <div class="elementos__cabecalho">
+                <input type="search" placeholder="Digite o que você procura" class="input__pesquisa">
             </div>
-            <a href="dist/cadastro.html">
-                <div class="login">
-                    <img src="dist/images/icons/icon-login.png" alt="Ícone Login" class="icon__login">
-                    <div>
-                        <p>Olá,</p>
-                        <p><strong>Faça seu conta</strong></p>
-                        
+
+            <div class="cabecalho__direito">
+                <a href="dist/cadastro.html">
+                    <div class="login">
+                        <img src="dist/images/icons/icon-login.png" alt="Ícone Login" class="icon__login">
+                        <div class="elementos__cabecalho">
+                            <p>Olá,</p>
+                            <p><strong>Faça seu conta</strong></p>
+                        </div>
+                        <span class="material-symbols-outlined caret elementos__cabecalho">arrow_drop_down</span>
                     </div>
-                    <span class="material-symbols-outlined caret">arrow_drop_down</span>
-                </div>
-            </a>
-            <div class="carrinho">
-                <span class="notificacao_carrinho"></span>
-                <a href="dist/carrinho.html" class="link_carrinho">
-                    <img src="dist/images/icons/icon-carrinho.png" alt="Ícone Carrinho" class="icon_carrinho">
-                    <p>Carrinho</p>
                 </a>
+                <div class="carrinho">
+                    <span class="notificacao_carrinho"></span>
+                    <a href="dist/carrinho.html" class="link_carrinho">
+                        <img src="dist/images/icons/icon-carrinho.png" alt="Ícone Carrinho" class="icon_carrinho">
+                        <p class="elementos__cabecalho">Carrinho</p>
+                    </a>
+                </div>
             </div>
+
         </section>
     </header>
 
@@ -57,8 +61,7 @@
             <h2 class="subtitle__link"><a href="#">Ver mais produtos -›</a></h2>
     </div>
 
-    <div class="container" id="container__nicho">
-    </div>
+    <div class="container" id="container__nicho"></div>
 
     </main>
 
@@ -112,6 +115,5 @@
     </footer>
 
     <script type="module" src="dist/js/exibirProdutosNaTela.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>

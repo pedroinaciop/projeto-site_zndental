@@ -7,8 +7,8 @@ export async function buscarProdutosAPI() {
 }
 ;
 const elementoParaInserirProdutos = document.querySelector('#container__nicho');
-export function exibirProdutosNaTela(itens) {
-    itens.forEach((produto) => {
+let exibirProdutosNaTela = (produtos) => {
+    produtos.forEach((produto) => {
         elementoParaInserirProdutos.innerHTML += ` 
         <div action="" class="container__nicho">
             <div class="nicho__imagem">
@@ -33,5 +33,4 @@ export function exibirProdutosNaTela(itens) {
         </div>`;
     });
     adicionarItensAoCarrinho();
-}
-;
+};

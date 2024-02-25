@@ -1,0 +1,55 @@
+@media screen and (max-width: 980px) {
+    /* CABECALHO */
+    .elementos__cabecalho {
+        display: none;
+    }
+
+    .navegacao__lista {
+        display: none;
+    }
+
+    /* MAIN */
+
+    main {
+        height: 100%;
+        width: 100%;
+    }
+
+    .container {
+        width: 100vw;
+    }
+
+    #container__nicho {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .subtitle {
+        width: 100vw;
+
+        flex-direction: column;
+        gap: .2rem;
+
+        margin-top: 0rem;
+        padding: 1rem 1rem 0rem 1rem;
+
+        font-size: .8rem;
+    }
+
+    .subtitle__link {
+        display: none;
+    }
+
+
+    /* RODAPE */
+    
+    .rodape {
+        display: none;
+    }
+    
+    .rodape__informacoes {
+        display: none;
+    }   
+
+}

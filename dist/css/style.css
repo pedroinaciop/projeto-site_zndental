@@ -1,9 +1,10 @@
+@import url(reset.css);
 @import url(header.css);
 @import url(main.css);
 @import url(footer.css);
-@import url(reset.css);
 @import url(formulario.css);
 @import url(carrinho.css);
+@import url(media-query/mobile.css);
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Open+Sans:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
 
@@ -17,7 +18,9 @@
     --cor-fonte: #667381;
 }
 
-body, html {
-    height: 100vh;
+html {
+    height: 100%;
+    width: 100%;
     background-color: #F9F9F9;
+    overflow-x: hidden;
 }

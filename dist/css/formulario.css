@@ -1,15 +1,19 @@
 .formulario {
     display: block;
     margin: auto;
+    
+    width: 60%;
+
     margin-top: 1.5em;
     margin-bottom: 1.5em;
-    padding: 2.5em;
-    width: 60%;
-    border-radius: 1em;
-    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.194);
-    background-color: var(--cor4);
     border-top: 3px solid var(--cor1);
     border-bottom: 3px solid var(--cor1);
+    border-radius: 1em;
+    padding: 2.5em;
+
+    background-color: var(--cor4);
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.194);
+    
 }
 
 .titulo_formulario {
@@ -25,8 +29,7 @@
 .container__dados {
     display: flex;
     justify-content: space-between;
-    padding: 10px;
-    
+    padding: .6rem;
 }
 
 .dados {
@@ -37,30 +40,33 @@
 .dados__whats {
     display: flex;
     flex-direction: row;
+
+    margin-top: 2rem;
     align-items: center;
-    margin-top: 32px;
 }
 
 #whatsapp {
-    padding: 10px;
+    padding: .6rem;
 }
 
 label {
-    padding: 10px 0;
+    padding: .6rem 0rem;
 }
 
 input {
     height: 2em;
-    padding: 0.2em .6em;
-    border-radius: 10px;
+
     border: .5px solid var(--cor-fonte);
+    border-radius: .6rem;
+    padding: 0.2em .6em;
 }
 
 select {
     height: 2.4em;
-    padding: 0.2em .6em;
-    border-radius: 10px;
+    
     border: .5px solid var(--cor-fonte);
+    border-radius: .6rem;
+    padding: 0.2em .6em;
 }
 
 input:read-only {
@@ -68,26 +74,28 @@ input:read-only {
 }
 
 #cadastrar {
-    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.194);
-    background-color: var(--cor1);    
-    color: var(--cor4);
-    padding: 12px;
-    border: 0;
-    border-radius: 10px;
-    font-size: 18px;     
-    font-weight: bold;
-    margin: 10px;
     width: 20%;
+
+    border: 0;
+    border-radius: .6rem;
+    padding: .75rem;
+    margin: .6rem;
+
+    font-size: 1.1rem;
+    font-weight: bold;
+
+    color: var(--cor4);
+    background-color: var(--cor1);    
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.194);
 }
 
 #cadastrar:hover {
-    box-shadow: 0;
     background-color: var(--cor0);
     cursor: pointer;
 }
 
 #cadastrar:active {
-    box-shadow: 0px 0px 0px;
-    background-color: var(--cor4);    
     color: var(--cor0);  
+    background-color: var(--cor4);    
+    box-shadow: 0px 0px 0px;
 }

@@ -1,15 +1,18 @@
 main {
+    width: 68rem;
+
     display: block;
     margin: auto;
-    width: 1100px;
 }
 
 .subtitle {
     display: flex;
-    gap: 10px;
-    font-size: .7rem;
-    margin-top: 30px;
+    gap: .6rem;
+
+    margin-top: 1.8rem;
+    
     color: var(--cor1);
+    font-size: .7rem;
 }
 
 .subtitle__link a {
@@ -21,68 +24,76 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
-    padding: 15px;
+    gap: 1.25rem;
+
+    padding: .9rem;
 }
 
 .container__nicho {
-    background-color: var(--cor4);
-    border-radius: 10px;
-    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.325);
-    padding: 10px;
-    height: 435px;
-    width: 175px;
+    height: 27rem;
+    width: 11rem;
+    padding: .6rem;
 
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: .6rem;
+
+    background-color: var(--cor4);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.325);
+    border-radius: .6rem;
 }
 
 .nome_produto {
-    height: 65px;
-    font-size: 1em;
-    font-weight: bold;
+    height: 4rem;
+
     color: var(--cor0);
+    font-size: 1rem;
+    font-weight: bold;
 }
 
 .nicho__imagem {
+    height: 11rem;
+    width: 11rem;
+
     display: flex;
+
     align-items: center;
-    height: 180px;
-    width: 180px;
 }
 
 .nicho__imagem__img {
-    height: 160px;
-    width: 180px;
+    height: 10rem;
+    width: 11.25rem;
 }
 
 
 .nicho__informacoes {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: .3rem;
 }
 
 .descricao {
+    height: 1.8rem;
+
     color: #667381;
     font-size: .7em;
-    height: 30px;
 }
 
 .container_precos_anteriores {
     display: flex;
-    font-size: 1em;
-    font-weight: bold;
-    text-decoration: line-through;
+
     color: #99A2AB;
+    text-decoration: line-through;
+    font-size: 1rem;
+    font-weight: bold;
 }
 
 .container_precos_atuais {
     display: flex;
-    font-size: 1.7em;
-    font-weight: bolder;
+    
     color: var(--cor0); 
+    font-size: 1.7rem;
+    font-weight: bolder;
 }
 
 .codigo_produto {
@@ -90,16 +101,19 @@ main {
 }
 
 .comprar {
-    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.194);
-    background-color: var(--cor0);
-    color: white;
     width: 100%;
-    font-size: 1.3em;
-    border-radius: 10px;
-    padding: 20px;
-    text-align: center;
-    cursor: pointer;
+
     border: 0;
+    border-radius: .6rem;
+    padding: 1.2rem;
+    
+    color: var(--cor4);
+    background-color: var(--cor0);
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.194);
+
+    text-align: center;
+    font-size: 1.3rem;
+    cursor: pointer;
 }
 
 .comprar:hover {

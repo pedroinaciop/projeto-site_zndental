@@ -1,7 +1,32 @@
 import { calcularTotal, removerItemCarrinho } from "./funcoesCarrinho.js";
 import { notificacaoCarrinho } from "./funcoesCarrinho.js";
-visualizarItensCarrinho();
-export function visualizarItensCarrinho() {
+export function adicionarItensAoCarrinho() {
+    const carrinhoString = [];
+    const elementoProduto = document.querySelectorAll(".container__nicho");
+    elementoProduto.forEach((elemento) => {
+        elemento.addEventListener("click", (event) => {
+            const elementoClicado = event.currentTarget;
+            const nomeInput = elementoClicado.querySelector(".nome_produto");
+            const imagemInput = elementoClicado.querySelector(".nicho__imagem__img");
+            const precoInput = elementoClicado.querySelector(".preco_atual");
+            const codigoInput = elementoClicado.querySelector(".codigo_produto");
+            const nome = nomeInput.innerText;
+            const imagem = imagemInput.src;
+            const preco = precoInput.innerText;
+            const codigo = codigoInput.innerText;
+            const itemCarrinho = {
+                nome: nome,
+                imagem: imagem,
+                preco: preco,
+                codigo: codigo,
+            };
+            carrinhoString.push(itemCarrinho);
+            localStorage.setItem('carrinho', JSON.stringify(carrinhoString));
+            notificacaoCarrinho();
+        });
+    });
+}
+let visualizarItensCarrinho = () => {
     const precos = [];
     const carrinhoSalvoString = localStorage.getItem('carrinho');
     const carrinhoSalvo = JSON.parse(carrinhoSalvoString);
@@ -28,37 +53,5 @@ export function visualizarItensCarrinho() {
             removerItemCarrinho();
         }
     }
-}
-export function adicionarItensAoCarrinho() {
-    const carrinhoString = [];
-    const elementoProduto = document.querySelectorAll(".container__nicho");
-    elementoProduto.forEach((elemento) => {
-        elemento.addEventListener("click", (event) => {
-            const elementoClicado = event.currentTarget;
-            const nomeInput = elementoClicado.querySelector(".nome_produto");
-            const imagemInput = elementoClicado.querySelector(".nicho__imagem__img");
-            const precoInput = elementoClicado.querySelector(".preco_atual");
-            const codigoInput = elementoClicado.querySelector(".codigo_produto");
-            const nome = nomeInput.innerText;
-            const imagem = imagemInput.src;
-            const preco = precoInput.innerText;
-            const codigo = codigoInput.innerText;
-            const itemCarrinho = {
-                nome: nome,
-                imagem: imagem,
-                preco: preco,
-                codigo: codigo,
-            };
-            carrinhoString.push(itemCarrinho);
-            localStorage.setItem('carrinho', JSON.stringify(carrinhoString));
-            Swal.fire({
-                position: "center",
-                icon: "success",
-                title: `${nome} adicionado(a) ao carrinho`,
-                showConfirmButton: false,
-                timer: 1000
-            });
-            notificacaoCarrinho();
-        });
-    });
-}
+};
+visualizarItensCarrinho();

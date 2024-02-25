@@ -2,9 +2,40 @@ import { calcularTotal, removerItemCarrinho } from "./funcoesCarrinho.js";
 import { notificacaoCarrinho } from "./funcoesCarrinho.js";
 import { Carrinho } from "./util/Carrinho.js"
 
-visualizarItensCarrinho();
+export function adicionarItensAoCarrinho() {
+    const carrinhoString = [];
+    const elementoProduto = document.querySelectorAll(".container__nicho");
+    
+    elementoProduto.forEach((elemento) => {
+        elemento.addEventListener("click", (event) => {
+            const elementoClicado = event.currentTarget as HTMLElement;
+            
+            const nomeInput       = elementoClicado.querySelector(".nome_produto") as HTMLElement;
+            const imagemInput     = elementoClicado.querySelector(".nicho__imagem__img") as HTMLImageElement;
+            const precoInput      = elementoClicado.querySelector(".preco_atual") as HTMLElement;
+            const codigoInput     = elementoClicado.querySelector(".codigo_produto") as HTMLElement;
+            
+            const nome: string    = nomeInput.innerText;
+            const imagem: string  = imagemInput.src;
+            const preco: string   = precoInput.innerText;
+            const codigo: string  = codigoInput.innerText;
+            
+            const itemCarrinho: Carrinho = {
+                nome:   nome,
+                imagem: imagem,
+                preco:  preco,
+                codigo: codigo,
+            }
+    
+            carrinhoString.push(itemCarrinho);
+            localStorage.setItem('carrinho', JSON.stringify(carrinhoString));
+            notificacaoCarrinho();
+            
+        });
+    }); 
+}
 
-export function visualizarItensCarrinho(): void {
+let visualizarItensCarrinho = () => {
     const precos = [];
     const carrinhoSalvoString = localStorage.getItem('carrinho');
     const carrinhoSalvo = JSON.parse(carrinhoSalvoString);
@@ -36,42 +67,4 @@ export function visualizarItensCarrinho(): void {
     }
 }
 
-export function adicionarItensAoCarrinho(): void {
-    const carrinhoString = [];
-    const elementoProduto = document.querySelectorAll(".container__nicho");
-    
-    elementoProduto.forEach((elemento) => {
-        elemento.addEventListener("click", (event) => {
-            const elementoClicado = event.currentTarget as HTMLElement;
-            
-            const nomeInput       = elementoClicado.querySelector(".nome_produto") as HTMLElement;
-            const imagemInput     = elementoClicado.querySelector(".nicho__imagem__img") as HTMLImageElement;
-            const precoInput      = elementoClicado.querySelector(".preco_atual") as HTMLElement;
-            const codigoInput     = elementoClicado.querySelector(".codigo_produto") as HTMLElement;
-            
-            const nome: string    = nomeInput.innerText;
-            const imagem: string  = imagemInput.src;
-            const preco: string   = precoInput.innerText;
-            const codigo: string  = codigoInput.innerText;
-            
-            const itemCarrinho: Carrinho = {
-                nome:   nome,
-                imagem: imagem,
-                preco:  preco,
-                codigo: codigo,
-            }
-    
-            carrinhoString.push(itemCarrinho);
-            localStorage.setItem('carrinho', JSON.stringify(carrinhoString));
-            Swal.fire({
-                position: "center",
-                icon: "success",
-                title: `${nome} adicionado(a) ao carrinho`,
-                showConfirmButton: false,
-                timer: 1000
-            });
-            notificacaoCarrinho();
-            
-        });
-    }); 
-}
+visualizarItensCarrinho();

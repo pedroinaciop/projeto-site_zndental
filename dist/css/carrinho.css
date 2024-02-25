@@ -3,50 +3,54 @@
 }
 
 .container_carrinho {
-    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.150);
-    background-color: var(--cor4);
-    border-radius: 10px;
-    width: 600px;
-    height: 90px;
-    padding: 25px;
-    margin: 30px;
-
     display: flex;
-    gap: 30px;
+    gap: 1.8rem;
+
+    height: 5.6rem;
+    width: 37.5rem;
+
+    margin: 1.8rem;
+    padding: 1.5rem;
+    border-radius: .6rem;
+    
+    background-color: var(--cor4);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.150);
 }
 
 .produto_imagem_carrinho {
-    width: 120px;
-    height: 90px;
+    height: 5.6rem;
+    width: 7.5rem;
 }
 
 .produto_informacoes {
-    width: 300px;
-    height: 90px;
+    height: 5.6rem;
+    width: 18rem;
 }
    
 .produto_valor_carrinho {
     text-align: center;
-    padding: 15px 0px;
+    padding: .9rem 0rem;
 }
 
 .produto_remover {
+    height: 1.2rem;
+    width: 1.2rem;
+    
+    margin-top: .3rem;
+
     cursor: pointer;
-    margin-top: 6px;
-    width: 20px;
-    height: 20px;
 }
 
 .container_carrinho_vazio {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: .6rem;
 }
 
 .imagem_carrinho_vazio {
-    height: 70px;
-    width: 70px;
+    height: 4.3rem;
+    width: 4.3rem;
 }
 
 .texto_carrinho_vazio {
@@ -55,27 +59,31 @@
 }
 
 .btn_excluir_produto {
-    width: 30px;
-    height: 30px;
+    height: 1.8rem;
+    width: 1.8rem;
 
     cursor: pointer;
 }
 
 .container_calculo {
-    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.150);
-    background-color: var(--cor4);
+    height: 19.3rem;
+    width: 18.75rem;
+    border-radius: .6rem;
+    padding: 1.8rem;
+    margin: 1.8rem;
+
     color: var(--cor0);
-    border-radius: 10px;
-    width: 300px;
-    padding: 30px;
-    margin: 30px;
+    background-color: var(--cor4);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.150);
 }
 
 .calculo {
     display: flex;
-    gap: 150px;
+    gap: 9.3rem;
+
+    margin: .6rem 0rem .6rem 0rem;
+
     color: var(--cor-fonte);
-    margin: 10px 0px 10px 0px;
 }
 
 .valores {
@@ -84,17 +92,19 @@
 }
 
 .btn_finalizar_compra {
-    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.194);
-    background-color: var(--cor0);
-    color: white;
     width: 100%;
+    margin: 0.9rem 0rem;
+    border-radius: .6rem;
+    padding: .9rem;
+    border: 0;
+    
+    color: white;
+    background-color: var(--cor0);
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.194);
+    
     font-size: 1.1em;
-    border-radius: 10px;
-    margin: 15px 0px;
-    padding: 15px;
     text-align: center;
     cursor: pointer;
-    border: 0;
 }
 
 .aviso {
