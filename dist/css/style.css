@@ -8,6 +8,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Open+Sans:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
 
+body, html {
+    width: 100vw;
+    background-color: #F9F9F9;
+    overflow-x: hidden;
+}
+
 :root {
     --cor0: #363863;
     --cor1: #363889;
@@ -18,7 +24,3 @@
     --cor-fonte: #667381;
 }
 
-html {
-    background-color: #F9F9F9;
-    overflow-x: hidden;
-}

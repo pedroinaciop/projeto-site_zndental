@@ -13,6 +13,9 @@
 
     .cabecalho {
         justify-content: space-between;
+        gap: 2rem;
+
+        padding: .9rem 1.5rem;
     }
 
     .cabecalho__direito {
@@ -36,6 +39,8 @@
 
     .container {
         width: 100vw;
+        padding: 0;
+        gap: .9rem;
     }
 
     #container__nicho {
@@ -51,9 +56,9 @@
         gap: .2rem;
 
         margin-top: 0rem;
-        padding: 1rem 1rem 0rem 1rem;
+        padding: 1rem 1rem 1rem 1rem;
 
-        font-size: .8rem;
+        font-size: .7rem;
     }
 
     .subtitle__link {
