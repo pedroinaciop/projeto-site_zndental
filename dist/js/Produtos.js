@@ -12,7 +12,7 @@ class Produtos {
             this.exibirProdutosNaTela(produtos);
         }
         catch (error) {
-            console.error('Erro ao buscar produtos:', error);
+            console.error('Erro ao buscar produtos, verifique no código-fonte:', error);
         }
     }
     exibirProdutosNaTela(produtos) {

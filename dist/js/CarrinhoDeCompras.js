@@ -26,6 +26,7 @@ export class CarrinhoDeCompras {
         localStorage.setItem('carrinho', JSON.stringify(this.carrinhoString));
         this.notificacaoCarrinho();
     }
+    ;
     notificacaoCarrinho() {
         const notificacaoCarrinho = document.querySelector(".notificacao_carrinho");
         const produtosCarrinho = JSON.parse(localStorage.getItem('carrinho'));
@@ -33,6 +34,7 @@ export class CarrinhoDeCompras {
         notificacaoCarrinho.style.display = 'flex';
         return notificacaoCarrinho.textContent = total.toString();
     }
+    ;
     calcularTotal(precos) {
         const totalElemento = document.querySelector(".valor_total");
         let sum = 0;
@@ -42,6 +44,7 @@ export class CarrinhoDeCompras {
         }
         return totalElemento.textContent = `R$${sum.toFixed(2)}`;
     }
+    ;
     removerItemCarrinho() {
         const removerItem = document.querySelectorAll(".btn_excluir_produto");
         removerItem.forEach((elemento) => {
@@ -79,6 +82,7 @@ export class CarrinhoDeCompras {
             });
         });
     }
+    ;
     visualizarItensCarrinho() {
         const precos = [];
         const carrinhoSalvoString = localStorage.getItem('carrinho');
@@ -107,6 +111,5 @@ export class CarrinhoDeCompras {
             }
         }
     }
+    ;
 }
-const carrinho = new CarrinhoDeCompras();
-carrinho.visualizarItensCarrinho();

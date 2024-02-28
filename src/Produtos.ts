@@ -1,22 +1,34 @@
 import { CarrinhoDeCompras } from "./CarrinhoDeCompras.js";
+
 class Produtos {
-    elementoParaInserirProdutos;
-    constructor(elementoParaInserirProdutos) {
+    private elementoParaInserirProdutos: HTMLElement;
+
+    constructor(elementoParaInserirProdutos: HTMLElement) {
         this.elementoParaInserirProdutos = elementoParaInserirProdutos;
         this.buscarProdutosAPI();
     }
-    async buscarProdutosAPI() {
+
+    private async buscarProdutosAPI(): Promise<void> {
         try {
             const dados = await fetch('https://pedroinaciop.github.io/zndental/dados.json');
             const produtos = await dados.json();
             this.exibirProdutosNaTela(produtos);
-        }
-        catch (error) {
-            console.error('Erro ao buscar produtos:', error);
+        } catch (error) {
+            console.error('Erro ao buscar produtos, verifique no código-fonte:', error);
         }
     }
-    exibirProdutosNaTela(produtos) {
-        produtos.forEach((produto) => {
+
+    private exibirProdutosNaTela(produtos: any): void {
+        produtos.forEach((produto: {
+            imagem: string;
+            alt: string;
+            nome_produto: string;
+            marca: string;
+            descricao: string;
+            preco_anterior: number;
+            preco: number;
+            codigo: string;
+        }) => {
             this.elementoParaInserirProdutos.innerHTML += `
                 <div action="" class="container__nicho">
                     <div class="nicho__imagem">
@@ -40,9 +52,11 @@ class Produtos {
                     </div>
                 </div>`;
         });
+
         const itemCarrinho = new CarrinhoDeCompras();
         itemCarrinho.visualizarItensCarrinho();
     }
 }
-const elementoParaInserirProdutos = document.querySelector('#container__nicho');
+
+const elementoParaInserirProdutos = document.querySelector('#container__nicho') as HTMLElement;
 const produtos = new Produtos(elementoParaInserirProdutos);
