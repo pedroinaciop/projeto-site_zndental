@@ -4,7 +4,7 @@
 
 .container_carrinho {
     display: flex;
-    gap: 1.8rem;
+    justify-content: space-between;
 
     height: 5.6rem;
     width: 37.5rem;
@@ -79,7 +79,7 @@
 
 .calculo {
     display: flex;
-    gap: 9.3rem;
+    justify-content: space-between;
 
     margin: .6rem 0rem .6rem 0rem;
 

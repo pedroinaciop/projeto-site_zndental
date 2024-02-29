@@ -19,10 +19,6 @@
     gap: 5.6rem;
 }
 
-.cabecalho__logo {
-    height: 3.4rem;
-}
-
 .cabecalho__pesquisa {
     display: flex;
     gap: .5rem;
@@ -91,7 +87,7 @@
     cursor: pointer;
 }
 
-.icon_carrinho {
+.icon__carrinho {
     height: 1.4rem;
     padding: 0rem .6rem;
 }
@@ -103,7 +99,7 @@
     font-size: 1rem;    
 }
 
-.link_carrinho {
+.link__carrinho {
     display: flex;
 }
 
