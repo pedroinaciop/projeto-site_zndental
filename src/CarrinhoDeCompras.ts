@@ -75,7 +75,7 @@ export class CarrinhoDeCompras {
                 const nomeElementoClicado: HTMLElement = elementoClicado.parentElement.querySelector(".produto_nome_carrinho") as HTMLElement;
                 
     
-                //Alerta sobre a esclusão do material
+                //Alerta sobre a exclusão do material
                 Swal.fire({
                     title: `Certeza que deseja retirar a(o) ${nomeElementoClicado.textContent} do carrinho?`,
                     icon: "warning",
