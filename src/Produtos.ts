@@ -30,7 +30,7 @@ class Produtos {
             codigo: string;
         }) => {
             this.elementoParaInserirProdutos.innerHTML += `
-                <div action="" class="container__nicho">
+                <div class="container__nicho">
                     <div class="nicho__imagem">
                         <img class="nicho__imagem__img" src="${produto.imagem}" alt="${produto.alt}">
                     </div>
@@ -47,9 +47,8 @@ class Produtos {
                     </div>
                         <p class="codigo_produto">(Cód. ${produto.codigo})</p>
                     </div>
-                    <div class="quantidade_adicionada">
-                        <button type="submit" class="comprar quantidade_selecionada">Adicionar</button>
-                    </div>
+                    
+                    <button type="submit" class="comprar">Adicionar</button>    
                 </div>`;
         });
 

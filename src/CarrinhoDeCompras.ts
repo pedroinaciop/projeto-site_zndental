@@ -4,16 +4,22 @@ export class CarrinhoDeCompras {
     private carrinhoString: Carrinho[] = [];
 
     constructor() {
-        const elementoProduto = document.querySelectorAll(".container__nicho");
+        const btnComprar = document.querySelectorAll(".comprar");
 
-        elementoProduto.forEach((elemento) => {
-            elemento.addEventListener("click", this.adicionarItemAoCarrinho.bind(this));
+        btnComprar.forEach((elemento) => {
+            elemento.addEventListener("click", (event) => {
+                const elementoClicado = event.currentTarget as HTMLElement;
+                const elementoPai = elementoClicado.parentElement as HTMLElement;
+
+                elementoPai.addEventListener("click", this.adicionarItemAoCarrinho.bind(this));
+            });
         });
+
     }
 
-    private adicionarItemAoCarrinho(event: Event): void {
+    public adicionarItemAoCarrinho(event: Event): void {
         const elementoClicado = event.currentTarget as HTMLElement;
-
+        
         const nomeInput = elementoClicado.querySelector(".nome_produto") as HTMLElement;
         const imagemInput = elementoClicado.querySelector(".nicho__imagem__img") as HTMLImageElement;
         const precoInput = elementoClicado.querySelector(".preco_atual") as HTMLElement;
@@ -33,7 +39,6 @@ export class CarrinhoDeCompras {
 
         this.carrinhoString.push(itemCarrinho);
         localStorage.setItem('carrinho', JSON.stringify(this.carrinhoString));
-        
         this.notificacaoCarrinho();
     };
 

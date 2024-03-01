@@ -1,8 +1,8 @@
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1200px) {
     /* CABECALHO */
 
     .cabecalho__logo {
-        height: 2.5rem;
+        height: 3rem;
     }
 
     .menu_hamburguer {
@@ -68,17 +68,20 @@
         display: none;
     }
 
-
     /* RODAPE */
     
-    .rodape {
-        display: none;
-    }
-    
     .rodape__informacoes {
-        display: none;
-    }   
+        width: 100vw;
 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .rodape__container__pagamentos {
+        justify-content: center;
+    }
 
     /* CARRINHO */
 
@@ -102,5 +105,29 @@
     .produto_imagem_carrinho {
         height: 5rem;
         width: 5rem;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .container__nicho {
+        width: 10rem;
+    }
+
+    .nicho__imagem__img {
+        width: 10rem;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .container {
+        gap: .6rem;
+    }
+
+    .container__nicho {
+        width: 9rem;
+    }
+
+    .nicho__imagem__img {
+        width: 9rem;
     }
 }

@@ -1,9 +1,13 @@
 export class CarrinhoDeCompras {
     carrinhoString = [];
     constructor() {
-        const elementoProduto = document.querySelectorAll(".container__nicho");
-        elementoProduto.forEach((elemento) => {
-            elemento.addEventListener("click", this.adicionarItemAoCarrinho.bind(this));
+        const btnComprar = document.querySelectorAll(".comprar");
+        btnComprar.forEach((elemento) => {
+            elemento.addEventListener("click", (event) => {
+                const elementoClicado = event.currentTarget;
+                const elementoPai = elementoClicado.parentElement;
+                elementoPai.addEventListener("click", this.adicionarItemAoCarrinho.bind(this));
+            });
         });
     }
     adicionarItemAoCarrinho(event) {
