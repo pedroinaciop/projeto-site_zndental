@@ -35,7 +35,7 @@ export class CarrinhoDeCompras {
         return notificacaoCarrinho.textContent = total.toString();
     }
     ;
-    calcularTotal(precos) {
+    static calcularTotal(precos) {
         const totalElemento = document.querySelector(".valor_total");
         let sum = 0;
         for (let i = 0; i < precos.length; i++) {
@@ -45,7 +45,7 @@ export class CarrinhoDeCompras {
         return totalElemento.textContent = `R$${sum.toFixed(2)}`;
     }
     ;
-    removerItemCarrinho() {
+    static removerItemCarrinho() {
         const removerItem = document.querySelectorAll(".btn_excluir_produto");
         removerItem.forEach((elemento) => {
             elemento.addEventListener("click", (event) => {
@@ -56,7 +56,7 @@ export class CarrinhoDeCompras {
                 const elementoClicado = event.currentTarget;
                 //Identifica o nome do produto clicado no carrinho
                 const nomeElementoClicado = elementoClicado.parentElement.querySelector(".produto_nome_carrinho");
-                //Alerta sobre a esclusão do material
+                //Alerta sobre a exclusão do material
                 Swal.fire({
                     title: `Certeza que deseja retirar a(o) ${nomeElementoClicado.textContent} do carrinho?`,
                     icon: "warning",
@@ -83,7 +83,7 @@ export class CarrinhoDeCompras {
         });
     }
     ;
-    visualizarItensCarrinho() {
+    static visualizarItensCarrinho() {
         const precos = [];
         const carrinhoSalvoString = localStorage.getItem('carrinho');
         const carrinhoSalvo = JSON.parse(carrinhoSalvoString);
@@ -106,10 +106,11 @@ export class CarrinhoDeCompras {
                     <img src="../dist/images/lata-de-lixo.png" class="btn_excluir_produto"></img>
                 </section>`;
                 precos.push(carrinhoSalvo[i].preco);
-                this.calcularTotal(precos);
-                this.removerItemCarrinho();
+                CarrinhoDeCompras.calcularTotal(precos);
+                CarrinhoDeCompras.removerItemCarrinho();
             }
         }
     }
     ;
 }
+CarrinhoDeCompras.visualizarItensCarrinho();

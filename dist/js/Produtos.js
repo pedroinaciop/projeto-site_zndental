@@ -41,7 +41,7 @@ class Produtos {
                 </div>`;
         });
         const itemCarrinho = new CarrinhoDeCompras();
-        itemCarrinho.visualizarItensCarrinho();
+        CarrinhoDeCompras.visualizarItensCarrinho();
     }
 }
 const elementoParaInserirProdutos = document.querySelector('#container__nicho');

@@ -47,7 +47,7 @@ export class CarrinhoDeCompras {
         return notificacaoCarrinho.textContent = total.toString();
     };
     
-    private calcularTotal(precos: any): string {
+    static calcularTotal(precos: any): string {
         const totalElemento: HTMLElement = document.querySelector(".valor_total") as HTMLElement;
         let sum = 0;
     
@@ -59,7 +59,7 @@ export class CarrinhoDeCompras {
         return totalElemento.textContent = `R$${sum.toFixed(2)}`;
     };
     
-    private removerItemCarrinho(): void {
+    static removerItemCarrinho(): void {
         const removerItem = document.querySelectorAll(".btn_excluir_produto");
     
         removerItem.forEach((elemento) => {
@@ -104,7 +104,7 @@ export class CarrinhoDeCompras {
         })
     };  
 
-    public visualizarItensCarrinho(): void  {
+    static visualizarItensCarrinho(): void  {
         const precos = [];
         const carrinhoSalvoString = localStorage.getItem('carrinho');
         const carrinhoSalvo = JSON.parse(carrinhoSalvoString);
@@ -130,9 +130,11 @@ export class CarrinhoDeCompras {
                 </section>`
     
                 precos.push(carrinhoSalvo[i].preco);
-                this.calcularTotal(precos);
-                this.removerItemCarrinho();
+                CarrinhoDeCompras.calcularTotal(precos);
+                CarrinhoDeCompras.removerItemCarrinho();
             }
         }
     };
 }
+
+CarrinhoDeCompras.visualizarItensCarrinho();

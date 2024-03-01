@@ -74,7 +74,7 @@ export class Usuario {
        this.elementoFormulario.reset();
    };
 
-   public async buscaCep(cep: string) { 
+   static async buscaCep(cep: string) { 
       try {
          const consultaCep = await fetch(`https://viacep.com.br/ws/${cep}/json/`);
          const ConsultaCepConvertido = await consultaCep.json();
@@ -97,7 +97,6 @@ export class Usuario {
 }
 
 const formulario = new Usuario();
-const CEPUsuario = new Usuario();
 
 const cep = document.querySelector('#cep') as HTMLInputElement;
-cep.addEventListener("focusout", () => CEPUsuario.buscaCep(cep.value));
+cep.addEventListener("focusout", () => Usuario.buscaCep(cep.value));

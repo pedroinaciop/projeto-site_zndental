@@ -54,7 +54,7 @@ class Produtos {
         });
 
         const itemCarrinho = new CarrinhoDeCompras();
-        itemCarrinho.visualizarItensCarrinho();
+        CarrinhoDeCompras.visualizarItensCarrinho();
     }
 }
 
