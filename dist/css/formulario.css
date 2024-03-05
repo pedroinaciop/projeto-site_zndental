@@ -74,8 +74,6 @@ input:read-only {
 }
 
 #cadastrar {
-    width: 20%;
-
     border: 0;
     border-radius: .6rem;
     padding: .75rem;

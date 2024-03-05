@@ -72,15 +72,23 @@
     
     .rodape__informacoes {
         width: 100vw;
+        padding: 5rem 0rem;
 
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
+
     }
 
     .rodape__container__pagamentos {
         justify-content: center;
+    }
+
+    .rodape__permissoes {
+        font-size: 1.2rem;
+        padding: 0rem 5rem 5rem 5rem;
+        font-size: .8rem;
     }
 
     /* CARRINHO */
@@ -106,6 +114,13 @@
         height: 5rem;
         width: 5rem;
     }
+
+    /* CADASTRO USUÁRIO */
+
+    .container__dados {
+        flex-direction: column;
+    }
+
 }
 
 @media screen and (max-width: 420px) {
@@ -116,6 +131,8 @@
     .nicho__imagem__img {
         width: 10rem;
     }
+
+
 }
 
 @media screen and (max-width: 376px) {
