@@ -8,8 +8,8 @@ O ZN Dental é um projeto pessoal feito em HTML, CSS e TypeScript onde testo meu
 
 ## ⚙️ Principais Funcionalidades
 
-Adicionar produtos ao carrinho,
-Calcular valor total dos produtos no carrinho,
+Adicionar produtos ao carrinho, <br>
+Calcular valor total dos produtos no carrinho, <br>
 Trazer endereço no usuário conforme CEP.
 
 # 🎨 Layout
