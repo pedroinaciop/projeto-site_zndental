@@ -10,7 +10,7 @@ Começo da minha jornada em React, onde aprendi criar projetos, componentes, pro
 ![Web 1](https://pedroinaciop.github.io/#)
 
 ## Tecnologias utilizadas
-[![Minhas Habilidades](https://skillicons.dev/icons?i=html,css,js,ts,react)](https://skillicons.dev)
+[![Minhas Habilidades](https://skillicons.dev/icons?i=html,css,js,react)](https://skillicons.dev)
 
 ## Autor
 
