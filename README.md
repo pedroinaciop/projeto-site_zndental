@@ -1,6 +1,6 @@
 # :tooth: E-commerce ZN Dental
 
-# Sobre o projeto
+# :desktop_computer: Sobre o projeto
 
 https://pedroinaciop.github.io/projeto-site_zndental/ 
 
