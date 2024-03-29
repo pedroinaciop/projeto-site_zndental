@@ -1,21 +1,16 @@
-# E-commerce ZN Dental
-
-[![NPM](https://img.shields.io/npm/l/react)](https://github.com/pedroinaciop/projeto-site_zndental/blob/main/LICENSE) 
+# Organo
 
 # Sobre o projeto
 
 https://pedroinaciop.github.io/projeto-site_zndental/ 
 
-O ZN Dental é um projeto pessoal feito em HTML, CSS e TypeScript onde testo meus recentes conhecimentos em como consumir dados com uma API, exemplo ViaCEP, projeto em construção.
+Começo da minha jornada em React, onde aprendi criar projetos, componentes, props, map e sua função importantíssima no mundo React e diversas outras funcionalidades dessa vasta biblioteca.
 
 ## Layout web 1
-![Web 1](https://pedroinaciop.github.io/projeto-site_zndental/dist/images/web-1.png)
-
-## Layout web 2
-![Web 2](https://pedroinaciop.github.io/projeto-site_zndental/dist/images/web-2.png)
+![Web 1](https://pedroinaciop.github.io/#)
 
 ## Tecnologias utilizadas
-[![Minhas Habilidades](https://skillicons.dev/icons?i=html,css,js,ts)](https://skillicons.dev)
+[![Minhas Habilidades](https://skillicons.dev/icons?i=html,css,js,ts,react)](https://skillicons.dev)
 
 ## Autor
 
