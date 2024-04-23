@@ -20,6 +20,9 @@ Trazer endereço no usuário conforme CEP.
 ## Web 2
 ![Web 2](https://pedroinaciop.github.io/projeto-site_zndental/dist/images/web-2.png)
 
+## Web 3 
+![Web 3](https://pedroinaciop.github.io/projeto-site_zndental/dist/images/web-3.png)
+
 ## Tecnologias utilizadas
 [![Minhas Habilidades](https://skillicons.dev/icons?i=html,css,js,ts)](https://skillicons.dev)
 
